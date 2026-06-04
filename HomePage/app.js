@@ -116,7 +116,7 @@ Project4.addEventListener("click", (event) => {
 
 const currentPage = window.location.pathname;
 
-if(currentPage === '/HomePage/index.html'){
+if(currentPage === '/index.html'){
 
     homeNav.classList.add("current");
 
