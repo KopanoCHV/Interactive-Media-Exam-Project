@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="AboutStyle.css">
+    <script src="./AboutPageApp.js" defer></script>
+</head>
+<body>
+
+    <div class="page-load" id="page-load">
+
+        <P class="loading-text">LOADING...</P>
+
+    </div>
+
+    <header class="header-section">
+
+        <div class="logo" data-tooltip="Website Logo">Kopano's Portfolio</div>
+
+        <div class="switch-container">
+
+            <input type="checkbox" id="switch">
+
+            <label for="switch" class="switch" data-tooltip="Theme toggle"><p class="light">Light</p><p class="dark">Dark</p></label>
+
+        </div>
+
+        <div class="navigation-container">
+            <ul>
+
+                <li><a id="home-navigation">Home</a></li>
+                
+                <li><a id="portfolio-navigation">Portfolio Page</a></li>
+
+                <li class="line"><a id="projects-navigation">Projects</a><button class="arrow" id="modal-control">&#9660;</button></li>
+
+                <li><a id="about-page-navigation">About Page</a></li>
+                
+            </ul>
+
+            <div class="link-modal" id="link-modal">
+
+                <ul>
+                    <li><a id="project1">Project 1</a></li>
+
+                    <li><a id="project2">Project 2</a></li>
+
+                    <li><a id="project3">Project 3</a></li>
+
+                    <li><a id="project4">Project 4</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <main class="main-section">
+
+        <div class="title-container">
+
+            <h1 class="heading">About me</h1>
+
+        </div>
+        
+        <section class="project-sections">
+
+            <img class="avator-image" id="openModal" src="../Assets/Images/Placeholder2.jpg" alt="">
+
+            <div class="modal" id="modal">
+
+                <div class="inner-modal-container">
+
+                    <button class="closeModal" id="closeModal">&#10060;</button>
+
+                    <img class="modal-inner" src="../Assets/Images/Placeholder2.jpg" alt="">
+
+                </div>
+                                                
+            </div>
+
+            <div class="project-information">
+
+                <h2 class="heading-1">Who is Kopano ?</h2>
+                
+                <p class="exp-text">I'm a Student in the Univerity of Witwatersrand, currently studing Bachelor of Engineering Science in Digital Arts, currently doing my final year of the degree. This degree teaches multiple skills which includes; Backend and Frontend game development, Frontend Web-development and Circuitry. After getting this degree I will more interested in working as a Web-developer (Backend and Frontend) and a Backend game developer. After graduating as a Digital Arts student, I'm Planning to countinue with my studies and and study Information Engineering to aquire skills of Data Enginners or Information Security Enginners. While studing for my second degree, I would like to work part-time as front-end web-developer to avoid work loads and disapointments.</p>
+
+                <P class="exp-text">At first my plan was to study Mechanical Engineering since that was what I wanted to do from a young age. But due to qualification difficulties, I ended up studing Digital Arts. Since Digital Arts is in the same schools as Electrical and Information engineering, for my second year of study I was exposed to more of the Electrical and Information Engineering specialties, and that's how I discovered how I enjoy things in those two fields. But the reason why I choose Information Engineering is because of how I would like to stay in the programming industry.</P>
+                
+            </div>
+
+        </section>
+
+        <section class="contacts-section">
+
+            <h2 class="heading-1">Contacts</h2>
+
+            <div class="contacts-container">
+
+                <div class="contact">
+
+                    <h3 class="heading-4">Email</h3>
+
+                    <p class="exp-text">kopanokopano174@gmail.com</p>
+
+                </div>
+
+                <div class="contact">
+
+                    <h3 class="heading-4">Address</h3>
+
+                    <p class="exp-text">Orchards st</p>
+
+                    <P class="exp-text">2191</P>
+
+                    <p class="exp-text">Johannesburg</p>
+
+                </div>
+
+                <div class="contact">
+
+                    <h3 class="heading-4">Phone</h3>
+
+                    <p class="exp-text">0600365576</p>
+
+                </div>
+
+                <div class="contact">
+
+                    <h3 class="heading-4">Social Media</h3>
+
+                    <p class="exp-text">Instagram: Kopano_devs</p>
+
+                    <p class="exp-text">Facebook: Kopano_devs102</p>
+
+                    <p class="exp-text">X: Kopano_Devs</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="about-footer">
+
+        <a id="previous-page-navigation"><button class="nav-buttons prev-tooltip" data-tooltip="Go to previous page">&xlarr;</button></a>
+        
+    </footer>
+    
+</body>
+</html>
