@@ -1183,4 +1183,36 @@ input{
 
         gap: 10px;
     }
+
+    .heading{
+
+        font-size: 2rem;
+
+        margin-top: 10px;
+    }
+
+    .heading-1{
+
+    font-size: 1.5rem;
+    }
+
+    .heading-2{
+        
+        font-size: 1.4rem;
+    }
+
+    .heading-3{
+
+        font-size: 1.2rem;
+    }
+
+    .heading-4{
+
+        font-size: 0.9rem;
+    }
+
+    .exp-text{
+
+        font-size: 0.9rem;
+    }
 }
