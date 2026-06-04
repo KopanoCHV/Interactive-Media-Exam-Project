@@ -847,44 +847,48 @@ input{
 
         width: 20px;
 
-        height: 30px;
+        height: 20px;
+
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
 
     }
 
     .switch::before{
 
-        width: 25px;
-
-        height: 25px;
-
-        border-radius: 200px;
-
-        margin: 5px;
-
         display: none;
 
     }
 
-    input:checked + .switch::before{
-
-        transform: translateX(36px);
-    }
-
-    .light{
-
-       /* margin-left: 5px;
-
-        font-size: 0.5rem;*/
+    .switch .light{
 
         display: none;
 
     }
+    
+    input:checked + .switch .light {
 
-    .dark{
+        display: block;
 
-        /*margin-right: 5px;
+        margin-left: 0;
 
-        font-size: 0.5rem;*/
+        font-size: 0.5rem;
+    }
+
+    .switch .dark{
+
+        display: flex;
+
+        margin-left: 5px;
+
+        font-size: 0.5rem;
+
+    }
+
+    input:checked + .switch .dark {
 
         display: none;
 
