@@ -1314,4 +1314,56 @@ input{
         font-size: 0.6rem;
     }
 
+    /*Theme size*/
+
+    .switch-container{
+
+        width: 30px;
+
+        height: 50%;
+
+    }
+
+    .switch{
+
+        width: 30px;
+
+        height: 30px;
+
+    }
+
+    .switch::before{
+
+        width: 25px;
+
+        height: 25px;
+
+        border-radius: 200px;
+
+        margin: 5px;
+
+    }
+
+    input:checked + .switch::before{
+
+        transform: translateX(36px);
+    }
+
+    .light{
+
+        margin-left: 5px;
+
+        font-size: 0.5rem;
+
+    }
+
+    .dark{
+
+        margin-right: 5px;
+
+        font-size: 0.5rem;
+
+    }
+
+
 }
