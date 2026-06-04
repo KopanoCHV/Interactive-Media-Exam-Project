@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Project2Style.css">
+    <script src="./Project2app.js" defer></script>
+</head>
+<body>
+
+    <div class="page-load" id="page-load">
+
+        <P class="loading-text">LOADING...</P>
+
+    </div>
+
+    <header class="header-section">
+
+        <div class="logo" data-tooltip="Website Logo">Kopano's Portfolio</div>
+
+        <div class="switch-container">
+
+            <input type="checkbox" id="switch">
+
+            <label for="switch" class="switch" data-tooltip="Theme toggle"><p class="light">Light</p><p class="dark">Dark</p></label>
+
+        </div>
+
+        <div class="navigation-container">
+            <ul>
+
+                <li><a id="home-navigation">Home</a></li>
+                
+                <li><a id="portfolio-navigation">Portfolio Page</a></li>
+
+                <li class="line"><a id="projects-navigation">Projects</a><button class="arrow" id="modal-control">&#9660;</button></li>
+
+                <li><a id="about-page-navigation">About Page</a></li>
+                
+            </ul>
+
+            <div class="link-modal" id="link-modal">
+
+                <ul>
+                    <li><a id="project1">Project 1</a></li>
+
+                    <li><a id="project2">Project 2</a></li>
+
+                    <li><a id="project3">Project 3</a></li>
+
+                    <li><a id="project4">Project 4</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <main class="main-section">
+
+        <div class="title-container">
+
+            <h1 class="heading" data-tooltip="Project Title">Back Home</h1>
+
+        </div>
+
+        <Section class="project-sections">
+
+            <h2 class="heading-1">Project Information</h2>
+
+            <div class="project-information">
+
+                <P class="exp-text">GitHub Link: https://github.com/KopanoCHV/GameD_3D.git</P>
+
+                <p class="exp-text">Role: Environment designer and Partialy Backend developer</p>
+
+                <p class="exp-text">Timeline: 17 July 2025 - 10 November 2025</p>
+
+            </div>
+
+        </Section>
+
+        <section class="project-sections">
+
+            <h2 class="heading-1">Project Overview</h2>
+
+            <div class="project-information">
+
+                <p class="exp-text">The aim of this project was to develop a 3D first-person game using Unity Hub. The game was supposed to include all assets, with all the game assets developed using Blender. It was also required to have an NPC or Enemy character that impacts gameplay. We also had to ensure that the gameplay loop is engaging and intuitive, providing a seamless and enjoyable experience for players. The game needed to have features like:</p>
+
+                <div class="points-image">
+                    
+                    <div class="side-points">
+
+                        <ul class="points exp-text">
+
+                            <li>Detailed Models;</li>
+                            <li>Texture;</li>
+                            <li>Animation;</li>
+                            <li>Lighting;</li>
+                            <li>UI;</li>
+                            <li>Audio;</li>
+                            <li>Particle Effects;</li>
+                            <li>Narration;</li>
+                            <li>Level Design;</li>
+
+                        </ul>
+                        <p class="exp-text">Technologies used for the project include:</p>
+
+                        <ul class="points exp-text">
+                            <li>Unity Hub;</li>
+                            <li>C-sharp;</li>
+                            <li>Blender;</li>
+                            <li>Krita;</li>
+                            <li>Visual Studio Code Editor;</li>
+                        </ul>
+                    </div>
+
+                    <div class="menu-image-container">
+
+                        <figure class="menu-figure">
+
+                            <img class="menu-image" src="../Assets/Images/Back-home-menu.png" id="openModal-7" alt="">
+
+                            <figcaption class="fig-text">Figure 1: This figure shows the main menu of the game.</figcaption>
+
+                        </figure>
+
+                    </div>
+
+                    <div class="modal" id="modal-7">
+
+                        <div class="inner-modal-container">
+
+                            <button class="closeModal" id="closeModal-7">&#10060;</button>
+
+                            <img class="modal-inner-7" src="../Assets/Images/Back-home-menu.png" alt="">
+
+                        </div>
+                            
+                    </div>
+
+                </div> 
+
+                <p class="exp-text">
+
+                    <strong>Storyline:</strong>
+                </p>
+
+                <p class="exp-text">
+                    This game is about an alien that crashed its ship on earth. The players plays as the alien, with a goal of finding all scatered pieces of the ship so that it can fix it and go back home. But as the player searches for the pieces, there is a creature they need to avoid that wants to kill them. So the character needs to find all the spaceship pieces without being killed by the creature.
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="project-sections">
+
+            <h2 class="heading-1">Implementation process</h2>
+
+            <div class="project-information">
+
+                <p class="exp-text">Since I was responsible for the Environmental design and some backend functionalities (like health system, damage systems, enemy movement and enemy attack, Item collection system and other basic functionalities), I first started with making sure that I finish the environment before contineuing with other parts of the game. The environment had few tasks which include:</p>
+               
+            </div>
+
+            <ul class="points exp-text">
+
+                <li>Land Scape;</li>
+                <li>Trees;</li>
+                <li>Grass and flowers;</li>
+                <li>Water;</li>
+                <li>Clouds;</li>
+                <li>Day / Night System;</li>
+
+            </ul>
+
+            <div class="project-information">
+
+                <p class="exp-text">When implementing these features, different tools were used. But after the implementation, all the products were brought back to Unity Hub to add them to the game.</p>
+
+                <p class="heading-2">Brakedown:</p>
+
+                <section class="project-sections">
+
+                    <h3 class="heading-2">1. Land Scape</h3>
+
+                    <div class="image-text">
+
+                        <div class="project-information">
+
+                            <p class="exp-text">For the game land scape, unity terrain built-in tool was used to implement the shape of the land scape. This tool gives the user the ability to shape the land scape by setting the height and depth of the ground on different sections of the terrain, making it look realistic. This was all that was needed when it came to setting up the shape of the Land Scape. The land scape was supposed to have mountains so that it looks like real land forms, but at the same time the land scape had to have paths where the character can walk on instead of having to walking on mountains every time. So, these parts were made to be smooth compared to the mountain parts.</p>
+
+                        </div>
+                        
+                        <div class="image-container">
+
+                            <figure class="figure">
+
+                                <img class="land-image" id="openModal" src="../Assets/Images/LandScape.png" alt="">
+
+                                <figcaption class="fig-text">Figure 2:This figure shows how the land scape looked with just placeholder trees.</figcaption>
+
+                            </figure>
+
+                            <div class="modal" id="modal">
+
+                                <div class="inner-modal-container">
+
+                                    <button class="closeModal" id="closeModal">&#10060;</button>
+
+                                    <img class="modal-inner" src="../Assets/Images/LandScape.png" alt="">
+
+                                </div>
+                                            
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <section class="project-sections">
+
+                    <h3 class="heading-2">2. Trees</h3>
+
+                    <div class="image-text-side">
+
+                        <div class="side-image-container">
+
+                            <figure class="tree-figure">
+
+                                <img class="image" id="openModal-2" src="../Assets/Images/Trees.png" alt="">
+
+                                <figcaption class="fig-text">Figure 3: This figure shows textured tree assets in the game.</figcaption>
+
+                            </figure>
+
+                        </div>
+
+                        <div class="modal" id="modal-2">
+
+                            <div class="inner-modal-container">
+
+                                <button class="closeModal" id="closeModal-2">&#10060;</button>
+
+                                <img class="modal-inner-2" src="../Assets/Images/Trees.png" alt="">
+
+                            </div>
+                                            
+                        </div>
+
+                        <div class="next-to-image-text">
+
+                            <p class="exp-text">In order to impliment trees used in the game, an external tool was used to model and texture them, this tool is called Blender. This tool had to be used for all assets in the game, these include; the trees, character and the crashed spaceship. This tool was not just used for modelling the 3D assets, it was also used for animations, which is parts of the project requirements. Adding animation to the trees improved the player's gameplay expirience and environmental esthetics and feel. And after modelling the trees and adding animations to them, now the trees had to be textured so that they look close to being realistic and also making the tree look polished. After modelling, animating and applying textures the tree in blender; it was then exported from blender and then importered to Unity Hub to be added to the game.</p>
+
+                            <p class="exp-text">After the tree was imported into Unity Hub, the trees then had to be positioned on the terrain. Unity Hub has a built in tool that allows users to place the trees using a brush feature that makes it easy to place and saves time. But when this tool was used, the trees appeared up-side-down without textures. Due to this, the trees had to placed manually (one-by-one) on the terrain. This took time to complete, but it came with an advantage of being able to make the tree animations seem real by making the trees sway in different directions making the sway simulation look realistic, instead of making them move in sync which seemed weird.</p>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <section class="project-sections">
+
+                    <h3 class="heading-2">3. Grass and Flowers</h3>
+
+                    <div class="project-information">
+
+                        <p class="exp-text">When the grass and flowers were implemented, an external tool called Krita was used. This tool was used to draw the textures of the plants (grass and flowers), after that they were exported from the software and imported into to Unity Hub as texters and were used as grass and flowers on the terrains. To paint the textures on the land scape, a built-in tool called <strong>texture brash</strong> was used to paint the grass and flower textures individualy on the land scape. This tool makes it a lot easier to paint the textures, instead of placing the textures one by one. The user can control the area the brush covers to speed up the process.</p>
+
+                    </div>
+
+                </section>
+
+                <section class="project-sections">
+
+                    <h3 class="heading-2">4. Water</h3>
+
+                    <div class="vertical-text-image">
+
+                        <p class="exp-text">To implement water, Unity shaders were used on a plane to make the plane have waves, simulating real water. And to make the plane to simiulate water perfectly, the plane was made to change colors, looking like how water would look when reflecting the sun light. And after working on the looks and animation (waves) of the water, some functionalities were added to the water. Since the character of the game is an alien, it was made that when the character touches the water it starts losing health. This will be explained more in sections to come.</p>
+
+                        <figure class="water-figure">
+
+                            <img class="vertical-image" id="openModal-3" src="../Assets/Images/Water.png" alt="">
+
+                            <figcaption class="fig-text">Figure 4: This figure shows water in the game.</figcaption>
+
+                        </figure>
+  
+                    </div>
+
+                    <div class="modal" id="modal-3">
+
+                        <div class="inner-modal-container">
+
+                            <button class="closeModal" id="closeModal-3">&#10060;</button>
+
+                            <img class="modal-inner" src="../Assets/Images/Water.png" alt="">
+
+                        </div>
+                                        
+                    </div>
+
+                </section>
+
+                <section class="project-sections">
+
+                    <h3 class="heading-2">5. Clouds</h3>
+
+                    <div class="project-information">
+
+                        <p class="exp-text">The clouds were also implemented using one of unity's built-in tools. For cloud, a particle effect tool was used. But in order to make the clouds using this tool, first a cloud texture had to be created using Krita. After the texture was complete, it was then imported into Unity Hub and used in the Unity Particle system tool. Then after this, all that was left to do was to set the dimensions of the area that the clouds should cover. The particle system handles animation automatically, all that was needed was to set the animation speed and after that the clouds were complete.</p>
+
+                    </div>
+
+                </section>
+ 
+            </div>
+
+            <p class="exp-text">
+                After the environment was finished, then I started working on game systems that make up gameplay. These systems include: 
+            </p>
+
+            <ul class="points exp-text">
+
+                <li>Character health system;</li>
+                <li>Collection system;</li>
+                <li>Water damage system;</li>
+                <li>Stamina system;</li>
+                <li>Enemy attack system;</li>
+
+            </ul>
+
+            <p class="heading-2"><strong>Brakedown:</strong></p>
+
+            <section class="project-sections">
+
+                <h3 class="heading-2">1. Character health system</h3>
+
+                <div class="project-information">
+
+                    <p class="exp-text">This game uses a Health Bar System instead of lives. The health bar is reduced when the character is attacked by the enemy (creature) or when the character touches water. If the health bar goes down to zero, the player starts from the beginning with the items collected starting from zero again. The character's health can also decrease when the player attempts to run when the stamina bar is depleted. The reason for this is to stop players from trying to over use the sprinting mechanic by always holding the sprint button even when the sprint bar is empty.</p>
+
+                </div>
+
+            </section>
+
+            <section class="project-sections">
+
+                <h3 class="heading-2">2. Collection system</h3>
+
+                <div class="vertical-text-image">
+
+                    <p class="exp-text">For the collection system, before the logic of the system was implemented I first needed to have the items (spaceship parts) that the character needs to collect. But to keep things simple, I used different 3D shapes found in unity to represent different parts, and made them have different colors that make them not too difficult to sport. And to also give them value, the parts where made to glow with every part having a different glow color. For the logic, it was made that when the player picks up the parts, they just walk through them, then the part disappears. After the part is collected, a UI that shows the number of parts collected updates. The UI separates the parts by shape, next to the shape that represents a certain part, there is a number that shows the number of that type of part was collected. When all the parts are collected, a win screen is then triggered.</p>
+
+                    <figure class="collective-figure">
+
+                        <img class="vertical-image" id="openModal-4" src="../Assets/Images/Collection.png" alt="">
+
+                        <figcaption class="fig-text">Figure 5: This figure shows a collectible part and a collection UI.</figcaption>
+
+                    </figure>
+
+                </div>
+
+                <div class="modal" id="modal-4">
+
+                    <div class="inner-modal-container">
+
+                        <button class="closeModal" id="closeModal-4">&#10060;</button>
+
+                        <img class="modal-inner" src="../Assets/Images/Collection.png" alt="">
+
+                    </div>
+                                        
+                </div>
+
+            </section>
+
+            <section class="project-sections">
+
+                <h3 class="heading-2">3. Water Damage system</h3>
+
+                <div class="project-information">
+
+                    <p class="exp-text">Since the character is an alien, we made it that when the character touches water they should lose health to add on to the story line of the game. How this was made, the water plane was set to <strong>istrigger</strong>, which makes the plane allow the character to walk through it (do not collide with anything). And the code checked if an a object with a tag "Player" is walking through it. If so, the player will lose health until they are not interacting with the plane anymore. The reason why the script checks for an object with a player tag, is to prevent the player losing health even when the enemy touches water but the player is not.</p>
+
+                </div>
+
+            </section>
+
+            <section class="project-sections">
+
+                <h3 class="heading-2">4. Stamina system</h3>
+
+                <div class="project-information">
+
+                    <p class="exp-text">Just like the health system, the stamina system uses a starmina bar to show the player the amount of stamina they have left. The stamina is used up only when the character sprints. And if the player still attempts to sprint even when the stamina bar is empty, the characters health will start decreasing. The reason for that system is to prevent players form abusing the use of the sprint mechanic.</p>
+
+                </div>
+
+            </section>
+
+            <section class="project-sections">
+
+                <h3 class="heading-2">5. Enemy attack system</h3>
+
+                <div class="image-text-side">
+
+                    <div class="side-image-container">
+
+                        <figure class="attack-figure">
+
+                            <img class="image" id="openModal-5" src="../Assets/Images/Enemy.png" alt="">
+
+                            <figcaption class="fig-text">Figure 6: This figure shows the enemy attacking the player.</figcaption>
+
+                        </figure>
+
+                    </div>
+
+                    <div class="modal" id="modal-5">
+
+                        <div class="inner-modal-container">
+
+                            <button class="closeModal" id="closeModal-5">&#10060;</button>
+
+                            <img class="modal-inner" src="../Assets/Images/Enemy.png" alt="">
+
+                        </div>
+                                            
+                    </div>
+
+                    <div class="next-to-image-text">
+
+                        <p class="exp-text">When the enemy was being implemented, we first had to start implementing all the logics that work on the enemy behaviour and impacts they can do to the character. This includes the movement logic, were the enemy searches for the character and attacks them. One other logic enemy uses is being able to affect the character's health system. For the enemy to affect the player's health, they have to be in contact with the player first. This means that if the player wants to be safe from the enemy, the should avoid being touched by the enemy. But there is a small problem with how the damage system works, the enemy is meant to decrease the player's health everytime they are in contact with them. But the enemy only decreases the player's health only when they get to contact (not while they are in contact). This means that, in order for the enemy to be able to decrease the players health multiple times, it has to keep losing contact with the player in order to create damage again. This means that if the player gets attacked and they dont move, the enemy will stay in contact with them, but wont decreasing their health.</p>
+
+                    </div>
+                    
+                </div>
+
+            </section>
+
+        </section>
+
+        <section class="project-sections">
+
+            <h2 class="heading-1">Challenges</h2>
+
+            <div class="project-information">
+
+                <p class="exp-text">In the process of devloping this project, there were a few features that were not implemented how we planned at the beginning of the project or were not implemeted completely. These sections are explained below.</p>
+
+                <section class="project-sections">
+
+                    <h3 class="heading-2">1. Enemy Model</h3>
+
+                    <p class="exp-text">The model for the enemy was supposed to be a wolf with walking and running animations. But due to group work challenges, the member who was supposed to work on the model and animation did not hand over the asset at the end of the project time line. This forced us to hand over the project with the enemy having only its functionalities (chasing and decreasing health).</p>
+
+                </section>
+
+                <section class="project-sections">
+
+                    <h3 class="heading-2">2. Character animations</h3>
+
+                    <p class="exp-text">For the character, the character had to be modelled in blender and also have animations for walking and running to improve gameplay expirience and to meet the project requirements. The character model was implemeted, but took more time than expected. This resulted in not having enough time to work on the animations for the character since they also took time and had alot of bugs when they were implemented. Due to this, we were forced to just export the model alone from blender without the animations since they did not work as intended. And the model was imported in Unity without the animations and added to the game.</p>
+
+                </section>
+
+                <section class="project-sections">
+
+                    <h3 class="heading-2">3. Water damage</h3>
+
+                    <div class="vertical-text-image">
+
+                        <p class="exp-text">At first, it was planned that the character should lose health as long as they are in contact with the water. But when the code for the logic was implemented, for some unknown reasons the character only lost health when they came in contact with the liquid, but after that when the character remain inside the liquid (still in contact with the water) they did not lose health anymore unless the jumped while they were still inside the water.</p>
+
+                        <figure class="water-damage-figure">
+
+                            <img class="vertical-image" id="openModal-6" src="../Assets/Images/Water Damage.png" alt="">
+
+                            <figcaption class="fig-text">Figure 7: This figure shows the character losing health due to touching water.</figcaption>
+                        </figure>
+
+                    </div>
+
+                    <div class="modal" id="modal-6">
+
+                        <div class="inner-modal-container">
+
+                            <button class="closeModal" id="closeModal-6">&#10060;</button>
+
+                            <img class="modal-inner" src="../Assets/Images/Water Damage.png" alt="">
+
+                        </div>
+                                            
+                    </div>
+
+                    
+                </section>
+
+                <section class="project-sections">
+
+                    <h3 class="heading-2">4. Force Damage</h3>
+
+                    <p class="exp-text">Since the game has mountains, it made sense to make the character lose health if the jump from high grounds to the lower ground due to the landing force. But when we tried to implement the logic for this functionality, we had issues of not being able to get the force the player land with, so that we can implement a boundary force value that determines if the player should lose health or not after landing.</p>
+
+                </section>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+    <footer class="footer-section">
+
+        <a id="previous-page-navigation"><button class="nav-buttons prev-tooltip" data-tooltip="Go to previous page">&xlarr;</button></a>
+
+        <a class="next-page" id="next-page-navigation" ><button class="nav-buttons next-tooltip" data-tooltip="Go to next page">&xrarr;</button></a>
+
+    </footer>
+</body>
+</html>
