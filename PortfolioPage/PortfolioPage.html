@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="PortfolioStyle.css">
+    <script src="./PortfolioApp.js" defer></script>
+</head>
+<body>
+
+    <div class="page-load" id="page-load">
+
+        <P class="loading-text">LOADING...</P>
+
+    </div>
+
+    <header class="header-section">
+
+        <div class="logo" data-tooltip="Website Logo">Kopano's Portfolio</div>
+
+        <div class="switch-container">
+
+            <input type="checkbox" id="switch">
+
+            <label for="switch" class="switch" data-tooltip="Theme toggle"><p class="light">Light</p><p class="dark">Dark</p></label>
+
+        </div>
+
+        <div class="navigation-container">
+            <ul>
+
+                <li><a id="home-navigation">Home</a></li>
+                
+                <li><a id="portfolio-navigation">Portfolio Page</a></li>
+
+                <li class="line"><a id="projects-navigation">Projects</a><button class="arrow" id="modal-control">&#9660;</button></li>
+
+                <li><a id="about-page-navigation">About Page</a></li>
+
+            </ul>
+
+            <div class="link-modal" id="link-modal">
+
+                <ul>
+                    <li><a id="project1">Project 1</a></li>
+
+                    <li><a id="project2">Project 2</a></li>
+
+                    <li><a id="project3">Project 3</a></li>
+
+                    <li><a id="project4">Project 4</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <main class="main-section">
+
+        <div class="title-container">
+
+            <h1 class="heading">Projects</h1>
+
+        </div>
+
+        <div class="projects-container">
+
+            <div class="projects morabaraba-tooltip" data-tooltip="Morabaraba Project Preview" >
+
+                <div class="projects-image-container" id="morabaraba-container">
+                    
+                    <img class="image" src="../Assets/Images/Screenshot 2026-05-10 172457.png" alt="Project 1 image" >
+
+                    <div class="morabaraba-view-container">
+
+                        <button class="view-button" id="morabaraba-view">View</button>
+
+                    </div>
+                    
+                </div>
+
+                <div class="project-description-container">
+                    <p><strong>Web-Based Morabaraba</strong>, This project is about building a digital version of the Morabaraba board game.</p>
+                </div>
+            </div>
+
+            <div class="projects back-home-tooltip" data-tooltip="Back Home Project Preview">
+
+                <div class="projects-image-container" id="back-home-container">
+
+                    <img class="image" src="../Assets/Images/In-Game.png" alt="Project 2 image" >
+
+                    <button class="view-button" id="back-home-view">View</button>
+
+                </div>
+
+                <div class="project-description-container">
+                    <p><strong>Back Home</strong>, This is a Game Design First-Person project done during my 2nd year of study.</p>
+                </div>
+            </div>
+
+            <div class="projects wake-up-tooltip" data-tooltip="Wake Up Project Preview">
+
+                <div class="projects-image-container" id="wake-up-container">
+
+                    <img class="image" src="../Assets/Images/Horror2.png" alt="Project 3 image" >
+
+                    <button class="view-button" id="wake-up-view">View</button>
+
+                </div>
+
+                <div class="project-description-container">
+                    <p><strong>Wake UP</strong>, This is a Game Design First-Person Horror prototype.</p>
+                </div>
+            </div>
+
+            <div class="projects climb-up-tooltip" data-tooltip="Climb Up Project Preview">
+
+                <div class="projects-image-container" id="climb-up-container">
+
+                    <img class="image" src="../Assets/Images/Prototype2.png" alt="Project 4 image" >
+
+                    <button class="view-button" id="climb-up-view">View</button>
+
+                </div>
+                
+                <div class="project-description-container">
+                    <p><strong>Climb UP</strong>, This project is a Game Design 2D Game Project.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="footer-section">
+
+        <a id="previous-page-navigation"><button class="nav-buttons prev-tooltip" data-tooltip="Go to previous page">&xlarr;</button></a>
+
+        <a class="next-page" id="next-page-navigation"><button class="nav-buttons next-tooltip" data-tooltip="Go to next page">&xrarr;</button></a>
+
+    </footer>
+    
+</body>
+</html>
