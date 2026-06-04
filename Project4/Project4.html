@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 4</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./Project4Style.css">
+    <script src="./Project4app.js" defer></script>
+</head>
+<body>
+
+    <div class="page-load" id="page-load">
+
+        <P class="loading-text">LOADING...</P>
+
+    </div>
+
+    <header class="header-section">
+
+        <div class="logo" data-tooltip="Website Logo">Kopano's Portfolio</div>
+
+        <div class="switch-container">
+
+            <input type="checkbox" id="switch">
+
+            <label for="switch" class="switch" data-tooltip="Theme toggle"><p class="light">Light</p><p class="dark">Dark</p></label>
+
+        </div>
+
+        <div class="navigation-container">
+            <ul>
+
+                <li><a id="home-navigation">Home</a></li>
+                
+                <li><a id="portfolio-navigation">Portfolio Page</a></li>
+
+                <li class="line"><a id="projects-navigation">Projects</a><button class="arrow" id="modal-control">&#9660;</button></li>
+
+                <li><a id="about-page-navigation">About Page</a></li>
+                
+            </ul>
+
+            <div class="link-modal" id="link-modal">
+
+                <ul>
+                    <li><a id="project1">Project 1</a></li>
+
+                    <li><a id="project2">Project 2</a></li>
+
+                    <li><a id="project3">Project 3</a></li>
+
+                    <li><a id="project4">Project 4</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <main class="main-section">
+
+        <div class="title-container">
+
+            <h1 class="heading" data-tooltip="Project Title">Climb Up</h1>
+
+        </div>
+
+        <Section class="project-sections">
+
+            <h2 class="heading-1">Project Information</h2>
+
+            <div class="project-information">
+
+                <P class="exp-text">Live Demo: </P>
+
+                <p class="exp-text">Role: Frontend and Backend developer</p>
+
+                <p class="exp-text">Timeline: 24 February 2026 - 11 March 2026</p>
+
+            </div>
+
+        </Section>
+
+        <section class="project-sections">
+
+            <h2 class="heading-1">Project Overview</h2>
+
+            <div class="project-information">
+
+                <p class="exp-text">The goal for this prototype was to explore a certain mechanic by forming a hypothesis about how the mechanic affects players gameplay experience. And the mechanic that was being explored was the multi-jump mechanic. This mechanic is like the normal jumping mechanic but instead of just allowing the player to just jump only if they are touchig the ground, this mechanic allows players to also jump even while they are in the air. This allows the player to kind of "fly" even when in reality they are just jumping. To be able to test this mechanic, there should be obsticles or an environment that forces the player to use the mechanic. When the prototype was being implemented there are few main features that had to be implemented, these features includes:</p>
+
+                <ul class="points exp-text">
+                    <li>Environment</li>
+                    <li>Enemies</li>
+                    <li>Level UI</li>
+                </ul>
+
+            </div>
+
+        </section>
+
+        <section class="project-sections">
+
+            <h2 class="heading-1">Implementation Process</h2>
+
+            <section class="project-sections">
+
+                <h3 class="heading-2">1. Environment</h3>
+
+                <div class="project-information">
+
+                    <div class="vertical-text-image">
+
+                        <p class="exp-text">When the prototype environment was implemented, it was made in a way that players are forced to use the multi-jump mechanic. Since the goal of the prototype was for players to reach the highest point of the map buy jumping from one level of the map to another, the levels were made to be far from each to a point were the normal jumping mechanic (one jump) would not be enough to cover the distance. And to also make the prototype a little more challenging, there were some points on the map were the grounds in some levels were made to move to make it hard for players to get on top of them. And to make sure that players dont get frustrated or tired from playing, the map have safe levels implemented, where there are no enemies and grounds are static allowing players to catch their breath. The environment also uses colors to tell the player how easy or difficult the map is as the player reaches higher grounds of the map.
+                        </p>
+
+                        <figure class="map-figure">
+
+                            <img class="vertical-image" id="openModal" src="../Assets/Images/Environment p1.png" alt="">
+
+                            <figcaption class="fig-text">Figure 1: This figure shows how the map design of the game looks.</figcaption>
+                        </figure> 
+
+                    </div>
+
+                    <div class="modal" id="modal">
+
+                        <div class="inner-modal-container">
+
+                            <button class="closeModal" id="closeModal">&#10060;</button>
+
+                            <img class="modal-inner-2" src="../Assets/Images/Environment p1.png" alt="">
+
+                        </div>
+                                                
+                    </div>
+
+                    <p class="heading-3"><strong>Challenges:</strong></p>
+
+                    <section class="project-sections">
+
+                        <h4 class="heading-3">Spacing between grounds</h4>
+
+                        <p class="exp-text">When the environment was being built, I had a challenge with getting the right space between grounds that would not make the prototype feel too easy due to the width of the spaces between grounds being too big. And there were some points in the game were players would just force themself through gaps just to avoid taking path they are meant to take. To fix these bugs, I had to play the game multiple times making sure that every space have the correct size, making the game not too easy for players and at the same time not too difficult.</p>
+
+                    </section>
+
+                    <section class="project-sections">
+
+                        <h4 class="heading-3">Colliders</h4>
+
+                        <p class="exp-text">When playtesters were given the prototype to playtest, there were points were the character would just go through grounds if the players pushed themselves through hard enough. This was caused by the unity colliders not being the same size as the object (ground). A collider is a attribute that can be added to an object to stop players or any other objects from being able to go through the object (if that object has a collider too). To fix this, I had to go through all the grounds, making sure that their colliders have the same size as them.</p>
+
+                    </section>
+
+                </div>
+
+            </section>
+
+            <section class="project-sections">
+
+                <h3 class="heading-2">2. Enemies</h3>
+
+                <div class="vertical-text-image">
+
+                    <p class="exp-text">The enemies in the prototype are made to patrol around the map floor without reacting to the player when they are around. If the player touches the enemy they start the prototype from the start (level 0). This challenges players to avoid being touched by the enemies while they go up the map. The number of enemies per level increase as the player goes up the map. And to make the game more interesting, the patrol pattern of the enemies also change as the player goes up the map. And the other thing that changes as the player goes up the map is the speed at which the enemies patrol. This makes players enjoy the game more since the prototype feels progresive, and allows the players to enjoy playing the prototype as they go up.</p>
+
+                    <figure class="enemies-figure">
+
+                        <img class="vertical-image" id="openModal-2" src="../Assets/Images/In-game environment p1.png" alt="">
+
+                        <figcaption class="fig-text">Figure 2: This figure shows enemies in the game.</figcaption>
+                        
+                    </figure>
+                
+                </div>
+
+                <div class="modal" id="modal-2">
+
+                    <div class="inner-modal-container">
+
+                        <button class="closeModal" id="closeModal-2">&#10060;</button>
+
+                        <img class="modal-inner" src="../Assets/Images/In-game environment p1.png" alt="">
+
+                    </div>
+                                                
+                </div>
+
+                <section class="project-sections">
+
+                    <p class="heading-3">Challenges:</p>
+
+                    <h4 class="heading-3">Patrol System</h4>
+
+                    <p class="exp-text">When the prototype was play tested, there was a problem of the enemies moving out of the game screen instead of moving back and forth. To explain the problem, I will first need to explain how the patrol system work. For one patrolling guard, one square is needed to represent the guard and two empty objescts are needed to act as points that the guard need to patrol between (turnning points). The square (guard) is then made to move in a straight line in one direction. The points are then positioned in points where the guard need to change direction on. The empty objects are then made to change the square's direction every time they come in contact with it. But what caused the square to move out the game screen, was because some empty objects that were supposed to change the guards direction were not properly aligned with the square leading to the square missing the empty object completely and continued to move the same direction.</p>
+
+                </section>
+
+            </section>
+
+            <section class="project-sections">
+
+                <h3 class="heading-2">3. Level UI</h3>
+
+                <div class="project-information">
+
+                    <p class="exp-text">To make the prototype more enjoyable for players, a Level UI was implemented to tell the player the number of levels they got across and also the number of level is left before they get to the top level of the map. This UI makes competetive players play the prototype multiple times until they beat the game, trying to win. The UI can be seen in figure 2 (to left corner).</p>
+                
+                </div>
+
+            </section>
+            
+        </section>
+
+    </main>
+
+    <footer class="footer-section">
+
+        <a id="previous-page-navigation"><button class="nav-buttons prev-tooltip" data-tooltip="Go to previous page">&xlarr;</button></a>
+
+        <a class="next-page" id="next-page-navigation"><button class="nav-buttons next-tooltip" data-tooltip="Go to next page">&xrarr;</button></a>
+
+    </footer>
+    
+</body>
+</html>
