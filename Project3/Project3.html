@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 3</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./Project3Style.css">
+    <script src="./Project3app.js" defer></script>
+
+</head>
+<body>
+
+    <div class="page-load" id="page-load">
+
+        <P class="loading-text">LOADING...</P>
+
+    </div>
+
+    <header class="header-section">
+
+        <div class="logo" data-tooltip="Website Logo">Kopano's Portfolio</div>
+
+        <div class="switch-container">
+
+            <input type="checkbox" id="switch">
+
+            <label for="switch" class="switch" data-tooltip="Theme toggle"><p class="light">Light</p><p class="dark">Dark</p></label>
+
+        </div>
+
+        <div class="navigation-container">
+            <ul>
+
+                <li><a id="home-navigation">Home</a></li>
+                
+                <li><a id="portfolio-navigation">Portfolio Page</a></li>
+
+                <li class="line"><a id="projects-navigation">Projects</a><button class="arrow" id="modal-control">&#9660;</button></li>
+
+                <li><a id="about-page-navigation">About Page</a></li>
+                
+            </ul>
+
+            <div class="link-modal" id="link-modal">
+
+                <ul>
+                    <li><a id="project1">Project 1</a></li>
+
+                    <li><a id="project2">Project 2</a></li>
+
+                    <li><a id="project3">Project 3</a></li>
+
+                    <li><a id="project4">Project 4</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <main class="main-section">
+
+        <div class="title-container">
+
+            <h1 class="heading" data-tooltip="Project Title">Wake Up</h1>
+
+        </div>
+
+        <Section class="project-sections">
+
+            <h2 class="heading-1">Project Information</h2>
+
+            <div class="project-information">
+
+                <P class="exp-text">Live Demo: </P>
+
+                <p class="exp-text">Role: Frontend and Backend developer</p>
+
+                <p class="exp-text">Timeline: 12 March 2026 - 1 June 2026</p>
+
+            </div>
+
+        </Section>
+
+        <section class="project-sections">
+
+            <h2 class="heading-1">Project Overview</h2>
+
+            <div class="project-information">
+
+                <p class="exp-text">The aim of this project was to explore a made up hypothesis about how a game machanic or system of our choice affects the player's gameplay expirience. This mechanic or system could be taken from any existing game, for example this prototype got inspiration from a maze runner movie. But for some features of the game, like how the game world (maze) is dark with not enough lights and how players depend on their flash light for vision, these ideas were taken from a horror game called Little Nightmares. And other ideas like limiting the time players have to find the exit of the maze was suggested by playtesters. The goals for this prototype includes:</p>
+
+                <ul class="points exp-text">
+
+                    <li>Have sytems that help players navigate;</li>
+                    <li>Have good communication systems;</li>
+                    <li>Have game features that communicates to the player the theme of the game;</li>
+                    <li>Implemet challenges or feature that improve gameplay expirience;</li>
+
+                </ul>
+
+                <div class="menu-image-container">
+
+                    <figure class="menu-figure">
+
+                        <img class="menu-image" src="../Assets/Images/WakeUp-Menu.png" id="openModal-8" alt="">
+
+                        <figcaption class="fig-text">Figure 1: This figure shows the main menu of the game.</figcaption>
+
+                    </figure>
+
+                </div>
+
+                <div class="modal" id="modal-8">
+
+                    <div class="inner-modal-container">
+
+                        <button class="closeModal" id="closeModal-8">&#10060;</button>
+
+                        <img class="modal-inner-8" src="../Assets/Images/WakeUp-Menu.png" alt="">
+
+                    </div>
+                                            
+                </div>
+
+                <section class="project-sections">
+
+                    <h3 class="heading-2">Technologies used:</h3>
+
+                    <ul class="points exp-text">
+
+                        <li>Unity Hub;</li>
+                        <li>C-sharp;</li>
+                        <li>Krita;</li>
+                        <li>Visual Studio Code Editer;</li>
+
+                    </ul>
+
+                </section>
+
+            </div>
+
+        </section>
+
+        <section class="project-sections">
+
+            <h2 class="heading-1">Implementation Process</h2>
+
+            <div class="project-information">
+
+                <p class="exp-text">When the prototype was implemented, the important parts of the prototype were the first ones to be implemented (the maze). This was to make sure that the following systems had somewhere to be tested and to make sure the small features that need to be connected to big systems have system to connect to.</p>
+            </div>
+
+            <section class="project-sections">
+
+                <h3 class="heading-2">1. Maze</h3>
+
+                <div class="vertical-text-image">
+
+                    <p class="exp-text">When the maze was designed, at first it was just going to be a maze made of paths some paths leading the players close to the exit, while others took players away from the exit leading them to dead ends. But when the maze was being built there were some issues with the design.</p>
+
+                    <figure class="maze-figure">
+
+                        <img class="vertical-image" id="openModal" src="../Assets/Images/Maze structure.png" alt="">
+
+                        <figcaption class="fig-text">Figure 2: This figure shows a top view prespective of the maze.</figcaption>
+
+                    </figure>
+
+                </div>
+
+                <div class="modal" id="modal">
+
+                    <div class="inner-modal-container">
+
+                        <button class="closeModal" id="closeModal">&#10060;</button>
+
+                        <img class="modal-inner" src="../Assets/Images/Maze structure.png" alt="">
+
+                    </div>
+                                            
+                </div>
+
+                <p class="heading-3"><strong>Challenges:</strong></p>
+
+                <section class="project-sections">
+
+                    <h4 class="heading-3">Spacing</h4>
+
+                    <p class="exp-text">When the maze was being built, I had an issue setting the right sizes for paths so that players don't get frustrated from the walls being too close to each other, or players not getting challenged or not feeling the effects of a maze due to the walls being too far apart. So I had to do a lot of playtesting and adjusting, ensuring that the width of the paths of the maze fits the maze well.</p>
+
+                </section>
+
+                <section class="project-sections">
+
+                    <h4 class="heading-3">Maze structure</h4>
+
+                    <p class="exp-text">Another problem I came across while I was building the maze was the fact that when the maze was made up of paths only, players got frustrated quickly because of how challenging it was to track where they have been or not been. To fix this, instead of the maze having paths only, I included rooms around so that it's easy to track where they have been. This also gives players a chance to get breathing room after walking between walls around the maze. Adding the rooms made the maze feel fair to players compared to just having paths throughout the maze. This allows the maze to challenge the players memory, and make the prototype fun instaed of just being challenging.</p>
+
+                </section>
+
+                <section class="project-sections">
+
+                    <h4 class="heading-3">Path design</h4>
+
+                    <p class="exp-text">When the maze was being built, I had to first make sure that there is a path or paths that leads the player to the exit of the maze before starting to work on the tricky paths (dead ends). And even when the paths that leads the players to the exit where designed, I had to also make them work with the tricky paths so that the maize does not have a lot of dead ends which might frustrate players. The tricky paths are not just meant to lead players to dead ends, the can also lead players to where the good paths starts, but can make players feel like they are moving in circles.</p>
+
+                </section>
+
+            </section>
+
+            <section class="project-sections">
+
+                <h3 class="heading-2">2. Navigation System</h3>
+
+                <div class="vertical-text-image">
+
+                    <p class="exp-text">These systems are used to help players get around the map without the getting frustrayed. At first, the game had a mini map that helped players get around the map by showing the where walls have openings that lead the to different parts of the map. But this mini map was used when the prototype had a bright scene. But now since the prototype is turned to a fully horror game, the scene was made to stay dark the whole time to make the prototype actually feel like a horror game. This made the mini map to also be dark and became useless for the player. And made the game fit in well with horror games since most of them dont have mini maps, instead they have physical map that players can pick up and look at.</p>
+
+                    <figure class="mini-map-figure">
+
+                        <img class="mini-map" src="../Assets/Images/MiniMap.png" id="openModal-2" alt="">
+
+                        <figcaption class="fig-text">Figure 3: This figure shows a mini map.</figcaption>
+
+                    </figure>
+
+                </div>
+
+                <div class="modal" id="modal-2">
+
+                    <div class="inner-modal-container">
+
+                        <button class="closeModal" id="closeModal-2">&#10060;</button>
+
+                        <img class="modal-inner-2" src="../Assets/Images/MiniMap.png" alt="">
+
+                    </div>
+                                            
+                </div>
+
+            </section>
+
+            <section class="project-sections">
+
+                <h3 class="heading-2">3. Communication Systems</h3>
+
+                <div class="project-information">
+
+                    <p class="exp-text">These systems communicate game states to players, helping them understand what is required from them. For this prototype, multiple communication systems were implemented to communicate different things to the player. These include:</p>
+
+                    <ul class="points exp-text">
+
+                        <li>Cold-Medium-Hot System;</li>
+                        <li>Papers;</li>
+                        <li>Sound;</li>
+                        <li>Count downs;</li>
+                        <li>Health System;</li>
+            
+                    </ul>
+                                    
+                </div>
+
+                <p class="heading-3"><strong>Explanations:</strong></p>
+
+                <section class="project-sections">
+
+                    <h4 class="heading-3">BOR System</h4>
+
+                    <div class="project-information">
+
+                        <p class="exp-text">This system is used to communicate to players how far they are from the exit. The system uses phases to communicate this to the player, these phases are called;</p>
+
+                        <ul class="points exp-text">
+
+                            <li>Out of range;</li>
+                            <li>Cold;</li>
+                            <li>Medium;</li>
+                            <li>Hot;</li>
+
+                        </ul>
+
+                        <div class="vertical-text-image">
+
+                            <div class="double-images">
+
+                                <figure class="BOR-figure">
+
+                                    <img class="vertical-image" id="openModal-3" src="../Assets/Images/BOR Flash.png" alt="">
+
+                                    <img class="vertical-image" id="openModal-4" src="../Assets/Images/BOR.png" alt="">
+
+                                    <figcaption class="fig-text">Figure 4: This figure shows how the BOR System works.</figcaption>
+
+                                </figure>
+
+                            </div>
+                            
+                            <div class="modal" id="modal-3">
+
+                                <div class="inner-modal-container">
+
+                                    <button class="closeModal" id="closeModal-3">&#10060;</button>
+
+                                    <img class="modal-inner-3" src="../Assets/Images/BOR Flash.png" alt="">
+
+                                </div>
+                                                        
+                            </div>
+
+                            <div class="modal" id="modal-4">
+
+                                <div class="inner-modal-container">
+
+                                    <button class="closeModal" id="closeModal-4">&#10060;</button>
+
+                                    <img class="modal-inner-4" src="../Assets/Images/BOR.png" alt="">
+
+                                </div>
+                                                        
+                            </div>
+
+                            <p class="exp-text">This system changes phases to indicate if the player is close or far from the exit (Out-of-range being the furthest and Hot being the closest). Each phase has a color representing it. When the system is in the Out-of-range phase, the system does not display anything. But when the player moves closer to the exit, the system changes from Out-of-range to Cold phase which is represented by a Blue color. If the player keeps moving towards the direction of the exit, the system will then change from a Cold phase to a Medium phase, which is represented by an orange color. And if the player keeps getting closer to the exit, the system then changes to the Hot phase represented by a red color. And when system changes from one phase to another, the system flashes the screen with the color of the current phase (phase changed to), and the name of that phase.</p>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <section class="project-sections">
+
+                    <h4 class="heading-3">Papers</h4>
+
+                    <div class="vertical-text-image">
+
+                        <p class="exp-text">This prototype uses papers that players have to pick up or just get close to, to read clues that help them get to the exit faster. These clues dont tell players exactly how to get  to the exit, but tells them how they would know when they are close. The papers are used as rewards to players after they manage to get to a certain part of the maze.</p>
+
+                        <figure class="paper-figure">
+
+                            <img class="vertical-image" id="openModal-5" src="../Assets/Images/Horror1.png" alt="">
+
+                            <figcaption class="fig-text">Figure 5: This figure shows one of the paper clues used in the game.</figcaption>
+
+                        </figure>
+
+                    </div>
+
+                    <div class="modal" id="modal-5">
+
+                        <div class="inner-modal-container">
+
+                            <button class="closeModal" id="closeModal-5">&#10060;</button>
+
+                            <img class="modal-inner-5" src="../Assets/Images/Horror1.png" alt="">
+
+                        </div>
+                                                
+                    </div>
+
+                </section>
+
+                <section class="project-sections">
+
+                    <h4 class="heading-3">Sound</h4>
+
+                    <div class="project-information">
+
+                        <p class="exp-text">Sound is one of the most important communication systems used in the prototype. What makes sound important is the fact that players cant miss it and it can make players feel exactly how the game wants them to feel. In the Cold-Medium-Hot system, sound is used to increase tension in the prototype as the player gets close to the exit. And sound it's also used to communicate small player-action like when the player is walking, recieving damage, picking up power-ups and when they are getting attacked. Sound is also used in the countdown system and health system. In the countdown system, sound is used to notify players when their time is running out, making them even more nervous. For the Health system, sound is used when the players health is about to deplete. How this works is when the player's health is below a certain number (30 hp), the player will start hearing a heart beat sound effect playing, making the aware of their health.</p>
+                
+                    </div>
+
+                </section>
+
+                <section class="project-sections">
+
+                    <h4 class="heading-3">Countdowns</h4>
+
+                    <div class="project-information">
+
+                        <p class="exp-text">This prototype had two different types of countdowns, one countdown was used to show the player the amount of time left before it becomes night time if its day time, and shows the time left before it becomes day time when it is night time. One countdown is used to tell the player the amount of time they have to beat the prototype (find the exit). The reason why the second countdown was implemented was becouse before it was implemented players did not have any agency, and they could just walk around the map doing other things and not trying to actually beat the prototype. This made the prototype boring for most players. To fix this, the gameplay limit countdown was implemented to force players to focus on the game and actually try to beat the game.</p>
+                
+                    </div>
+
+                </section>
+
+                <section class="project-sections">
+
+                    <h4 class="heading-3">Health System</h4>
+
+                    <div class="project-information">
+
+                        <p class="exp-text">This prototype uses a health bar to represent the character's health instead of lives, since lives work better if the game uses check points. There are few features that affect the player's health, these includes obsticles and jump scares. For the obsticles, the player loses health when they are in contact with them. And for the jump scares, the player will lose health when they trigger the jump scares and they will lose health for a long as the jump scare is visible on the screen.</p>                   
+                
+                    </div>
+
+                </section>
+
+            </section>
+
+            <section class="project-sections">
+
+                <h3 class="heading-2">4. Theme and Genre</h3>
+
+                <div class="project-information">
+
+                    <p class="exp-text">To communicate the prototype's theme properly to the player, alot of features were used to try to make sure players get an idea of what the theme of the prototype is, these include audio and lighting. For sound, the prototype was made to play creepy sound effects when the character passes specific areas of the maze to trigger the players emotions. And even when the player gets attacked, there is sound that plays so that there is feedback in the prototype, making the attack impectful. And when it comes to lighting, the prototype's world was made to always be dark which is how most horror games are. Since the prototype world is dark, to allow players to see where they are going, a torch was implemeted.</p>
+
+                </div>
+
+            </section>
+
+            <section class="project-sections">
+
+                <h3 class="heading-2">5. Implemenation of challenges</h3>
+
+                <div class="vertical-text-image">
+
+                    <p class="exp-text">Since the prototype's goal is to escape a maze, the prototype already has a challenge for the player. But to avoid players getting bored while trying to find the exit, I implemeted in-maze challenges that keeps players interested throughout gameplay. But to also avoid making the prototype too challenging for the player, only a few in-maze challenges were implemeted. One of these challenges include obsticles, to get past these onsticles the player needs to make use of mechanics like jumping and crouching. The obsticles reduce the player's health if the player gets in contact with them. And another challenge that was implemented was making the maze have jump scares that make player be more careful with were they go. To make sure the prototype feels fair to players, these jump scares were placed in some rooms and paths and had warnings that tell players if there is a jump scare ahead of them or not.</p>
+
+                    <div class="double-images">
+
+                        <figure class="challenges-figure">
+                            
+                            <img class="vertical-image" id="openModal-6" src="../Assets/Images/Obsticles.png" alt="">
+
+                            <img class="vertical-image" id="openModal-7" src="../Assets/Images/Jump Scare.png" alt="">
+
+                            <figcaption class="fig-text">Figure 6: This figure shows obsticles and Jump scares used in the game.</figcaption>
+                        </figure>
+
+                    </div>
+
+                    <div class="modal" id="modal-6">
+
+                        <div class="inner-modal-container">
+
+                            <button class="closeModal" id="closeModal-6">&#10060;</button>
+
+                            <img class="modal-inner-6" src="../Assets/Images/Obsticles.png" alt="">
+
+                        </div>
+                                                
+                    </div>
+
+                    <div class="modal" id="modal-7">
+
+                        <div class="inner-modal-container">
+
+                            <button class="closeModal" id="closeModal-7">&#10060;</button>
+
+                            <img class="modal-inner-7" src="../Assets/Images/Jump Scare.png" alt="">
+
+                        </div>
+                                                
+                    </div>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <footer class="footer-section">
+
+        <a id="previous-page-navigation"><button class="nav-buttons prev-tooltip" data-tooltip="Go to previous page">&xlarr;</button></a>
+
+        <a class="next-page" id="next-page-navigation"><button class="nav-buttons next-tooltip" data-tooltip="Go to next page">&xrarr;</button></a>
+
+    </footer>
+    
+</body>
+</html>
