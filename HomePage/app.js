@@ -39,7 +39,7 @@ const nextPageNav = document.querySelector("#next-page-navigation");
 
 homeNav.addEventListener("click", (event) => {
 
-    window.location.href = "../HomePage/index.html";
+    window.location.href = "../index.html";
 
 });
 

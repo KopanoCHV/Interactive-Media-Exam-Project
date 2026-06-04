@@ -99,7 +99,7 @@ const prevPageNav = document.querySelector("#previous-page-navigation");
 
 homeNav.addEventListener("click", (event) => {
 
-    window.location.href = "../HomePage/index.html";
+    window.location.href = "../index.html";
 
 });
 
