@@ -1194,6 +1194,11 @@ input{
 
 @media(max-width: 560px){
 
+    .heading{
+
+        font-size: 2.5rem;
+    }
+
     .portfolio-page-nav{
 
         display: none;
@@ -1291,4 +1296,40 @@ input{
 
         gap: 10px;
     }
+
+    .projects{
+
+        width: 300px;
+    }
+
+    .projects-image-container{
+
+        
+        width: 250px;
+
+        height: 250px;
+
+        margin-top: 25px;
+
+        margin-bottom: 5px;
+    }
+
+    .project-description-container{
+
+        height: 50px;
+
+        width: 250px;
+
+        /*color: rgb(211, 211, 211);*/
+
+        color: #F7F0F0;
+
+        margin: 15px;
+    }
+
+    .discription-text{
+
+        font-size: 0.9rem;
+    }
+
 }
