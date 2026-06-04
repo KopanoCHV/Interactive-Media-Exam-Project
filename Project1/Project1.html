@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="ProjectStyle.css">
+    <script src="./Project1app.js" defer></script>
+</head>
+<body>
+
+    <div class="page-load" id="page-load">
+
+        <P class="loading-text">LOADING...</P>
+
+    </div>
+
+    <header class="header-section">
+
+        <div class="logo" data-tooltip="Website Logo">Kopano's Portfolio</div>
+
+        <div class="switch-container">
+
+            <input type="checkbox" id="switch">
+
+            <label for="switch" class="switch" data-tooltip="Theme toggle"><p class="light">Light</p><p class="dark">Dark</p></label>
+
+        </div>
+
+        <div class="navigation-container">
+            <ul>
+
+                <li><a id="home-navigation">Home</a></li>
+                
+                <li><a id="portfolio-navigation">Portfolio Page</a></li>
+
+                <li class="line"><a id="projects-navigation">Projects</a><button class="arrow" id="modal-control">&#9660;</button></li>
+
+                <li><a id="about-page-navigation">About Page</a></li>
+                
+            </ul>
+
+            <div class="link-modal" id="link-modal">
+
+                <ul>
+                    <li><a id="project1">Project 1</a></li>
+
+                    <li><a id="project2">Project 2</a></li>
+
+                    <li><a id="project3">Project 3</a></li>
+
+                    <li><a id="project4">Project 4</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <main class="main-section">
+
+        <div class="title-container">
+
+            <h1 class="heading" data-tooltip="Project Title">Web-based Morabaraba</h1>
+
+        </div>
+
+        <Section class="project-sections">
+
+            <h2 class="heading-1">Project Information</h2>
+
+            <div class="project-information">
+
+                <P class="exp-text">Live Demo: https://morabaraba-game-d7h0c8fvg5dbawhs.southafricanorth-01.azurewebsites.net/</P>
+
+                <p class="exp-text">Role: Frontend developer</p>
+
+                <p class="exp-text">Timeline: Feb 2026 - May 2026</p>
+
+            </div>
+
+        </Section>
+
+        <section class="project-sections">
+
+            <h2 class="heading-1">Project Overview</h2>
+
+            <div class="project-information">
+
+                <p class="exp-text">The aim of this project was to implement a web-based version a Morabaraba board game. The Minimum Functionalities for the Web-based platform required include:</p>
+
+                <ul class="points exp-text">
+                    <li>Two users log-in and play against each other;</li>
+                    <li>Visual presentation of the board;</li>
+                    <li>Placement and Movement functionalities of cows;</li>
+                    <li>And enforcing game rules;</li>
+                </ul>
+
+                <div class="side-image-text-2">  
+
+                    <div class="side-points">
+
+                        <p class="exp-text">After the implementation of the minimum functionalities, a total of 10 extra features were added to the prototype. These includes:</p>
+
+                        <ul class="points exp-text">
+                            <li>Tutorials for beginners;</li>
+                            <li>A players leaderboard;</li>
+                            <li>Match history;</li>
+                            <li>Elo rating system;</li>
+                            <li>AI opponent game mode;</li>
+                            <li>Undo functionality;</li>
+                            <li>Move hints;</li>
+                            <li>Statistics tracking;</li>
+                            <li>Mobile-response design;</li>
+                            <li>Supporting different game varients (12 pieces, 9 pieces,6 pieces);</li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="side-image-container">
+
+                        <figure class="in-game-figure">
+
+                            <img class="in-game-image" id="openModal-4" src="../Assets/Images/Morabaraba-In_game.png" alt="">
+
+                            <figcaption class="fig-text">Figure 1: This figure shows an image of the game page of the side.</figcaption>
+
+                        </figure>
+
+                    </div>
+
+                    <div class="modal" id="modal-4">
+
+                        <div class="inner-modal-container">
+
+                            <button class="closeModal" id="closeModal-4">&#10060;</button>
+
+                            <img class="modal-inner" src="../Assets/Images/Morabaraba-In_game.png" alt="">
+
+                        </div>
+                                            
+                    </div>
+
+                </div>
+
+                <p class="exp-text">The reason for these specific extension features was to improve the user's gameplay expirience and allow users to be able to track their progress. Since I was working on the frontend, I implemented web features like; the main menu layout and its functionalities, feedback features in the main menu (like the responsiveness of buttons when players hover their mouse oo top of them), leaderboard . And for the game page, I worked on the board representation, pieces rendering, turn indicator system, reset board button and Back to Main Menu and its functionalities, and the End-game screen.</p>
+
+                <p class="exp-text">Technologies used for the frontend include:</p>
+
+                <ul class="points exp-text">
+                    <li>HTML;</li>
+                    <li>CSS;</li>
+                    <li>JavaScript;</li>
+                    <li>Visual Studio Code Editor;</li>
+                </ul>
+
+            </div>
+
+        </section>
+
+        <section class="project-sections">
+
+            <h2 class="heading-1">Implementation process</h2>
+
+            <div class="project-information">
+
+                <p class="exp-text">As the frontend developer of the project, one of the challenges I faced was implementing the right layout for the main menu and implementing the board and pieces, with movement and placement logic.</p>
+
+                <section class="project-sections">
+                    <h3 class="heading-2">1. Main Menu Layout</h3>
+
+                    <div class="project-information">
+
+                        <p class="exp-text">The Main Menu page is a page that users land on when they open the site. This page allows users to navigate to and access site features like Game Modes users would like to play (Local two player, AI opponent and Online two player mode) and other web features like a Leaderboard (shows every player's Elo rating, total games played, total wins, loses and draws obtained by the users), Game History (shows outcomes obtained by the user from their recent matches together with the usernames of their opponents), Tutorial for beginners (with demonstration videos), Log-in functionalities, and showing users if they logged in or not.</p>
+
+                        <section class="project-sections">
+                            <h4 class="heading-3">Challenges:</h4>
+
+                            <section class="project-sections">
+                                <h5 class="heading-4">
+                                    1. Layout
+                                </h5>
+
+                                <div class="project-information">
+
+                                    <div class="image-text">
+
+                                        <div>
+
+                                            <p class="exp-text">When the main menu was implemented, at first it was single columbed, only had buttons centered on the main menu page with a "Morabaraba" text above the buttons. The buttons and text were inside a box-like container making the page look more like a main menu and not just buttons and text floating in the middle of a page. When it comes to colors, the main menu had a brown theme showing that its a website for a board game. </p>
+
+                                        </div>
+
+                                        <div class="image-container">
+
+                                            <figure class="menu-image-figure">
+
+                                                <img class="menu-image" id="openModal" src="../Assets/Images/MainMenu.png" alt="Image of the main menu">
+
+                                                <figcaption class="fig-text">Figure 2: This figure shows how the menu of the website.</figcaption>
+
+                                            </figure>
+                                         
+                                        </div>
+
+                                        <div class="modal" id="modal">
+
+                                            <div class="inner-modal-container">
+
+                                                <button class="closeModal" id="closeModal">&#10060;</button>
+
+                                                <img class="modal-inner" src="../Assets/Images/MainMenu.png" alt="">
+
+                                            </div>
+                                            
+                                        </div>
+
+                                    </div>
+
+                                    <p class="exp-text">
+                                        But when the website was given to external users to test its functionalities, most of them did not like how the main menu looked. They said the website felt old and did not feel like it is a game website. The website did not excite players and did not make them look forward to playing the game. So the main menu had to be reconstructed, and this time we went for a morden look. To archieve this, right colors and layout structure had to be used to make the website feel morden. For the structure, we made the site have a sidebar, header section and a main section. And when it came to colors, we needed colors that will make the website feel clean and morden. Our final options for colors includes:
+                                    </p>
+
+                                    <ul class="points exp-text">
+                                        <li>#3d58G8 for the Pop-up modals;</li>
+                                        <li>#121826 for the sidebar;</li>
+                                        <li>#1E2A3A for the main section (Background of the main menu);</li>
+                                    </ul>
+
+                                    <p class="exp-text">
+                                        When it came to the positioning of main menu elements like buttons and text, we placed buttons that focus on game modes and features like the Leaderboard and Game History on the sidebar section of the website. And the when it comes to the "Morabaraba" text, the log-in/log-out button and the username display text; these elements were placed on header section of the website. And for the Main section of the Main Menu, we wanted to place important content that players would need to see when they entered the website. That's when we decided to put the tutorial with demonstration videos on the main section of the Main Menu.
+                                    </p>
+
+                                </div>
+                            </section>
+                            
+                        </section>
+
+                    </div>
+
+                </section>
+
+                <section class="project-sections">
+
+                    <h3 class="heading-2">2. Board rendering and movement/Placement logic</h3>
+
+                    <div class="project-information">
+
+                        <p class="exp-text">
+                            The requirements for the board was to draw a board with 24 intersections, with three concentric squares. Players should only interact with the intersection of the board when they place or move a cow. Since I was focusing on the frontend, I just had to draw the board and player cows, and also implement the placing logic of cows.
+                        </p>
+
+                        <section class="project-sections">
+
+                            <h4 class="heading-3">Challenges:</h4>
+
+                            <section class="project-sections">
+
+                                <h5 class="heading-4">1. Drawing the board</h5>
+
+                                <div class="project-information">
+
+                                    <div class="side-image-text">
+
+                                        <div class="side-image-container-1">
+
+                                            <figure class="board-image-figure">
+
+                                                <img class="board-image" id="openModal-2" src="../Assets/Images/Board.png" alt="">
+
+                                                <figcaption class="fig-text">Figure 3: This figure shows the game board.</figcaption>
+                                                
+                                            </figure>
+
+                                        </div>
+
+                                        <div class="modal" id="modal-2">
+
+                                            <div class="inner-modal-container">
+
+                                                <button class="closeModal" id="closeModal-2">&#10060;</button>
+
+                                                <img class="modal-inner" src="../Assets/Images/Board.png" alt="">
+
+                                            </div>
+                                            
+                                        </div>
+
+                                        <div class="next-to-image-text">
+
+                                            <p class="exp-text">For board implementation, Canvas API was used since it uses languages I was already used to (JavaScript and CSS) and it was easy to use. This saved us the time to have to learn other code languages to be able to use the tool.</p>
+
+                                            <p class="exp-text">Since Canvas API worked with 2D coordinate system, instead of just drawing the board by eye balling it, I had to first define the dimensions of the three concentric squares of the board. This makes the drawing process easier and also make it easy for me to work on the placement logic of the game. These dimensions includes the hight and width of the squares and the coordinates of the top left corner. These dimensions were then stored in an array of objects, making it easy to access them. The dimensions were then used to draw the three concentric squares of the board. To do this, a built-in Canvas API function called <strong>strokeRect</strong> was used. The function takes in four parameters; the x and y intercepts of where the top-left corner of the square should be, and also the width and height of the squares. And when drawing the vertical, horizontal and diagonal lines of the board, the coordinates of the corners and midpoints of the sides of the concentric squares were used. To draw the lines, four built-in Canvas API functions were required. This functions include:</p>
+
+                                        </div>
+                                    </div>                                   
+                                    
+                                    <ul class="points exp-text">
+                                        <li><strong>beginPath</strong> function : This function starts a new path of the line and takes no parameters.</li>
+                                        <li><strong>moveTo</strong> function : This function is used to tell the canvas where to start drawing the line. The function takes two parameters, which are the x and y intercepts of the starting point.</li>
+                                        <li><strong>lineTo</strong> function : This function is used to define the end point of the line. The function also takes two parameters, which are the x and y intercepts of the end point of the line.</li>
+                                        <li><strong>stroke</strong> function : This function renders the line on canvas, making it visible. This function does not take parameters.</li>
+                                    </ul>
+
+                                    <p class="exp-text">For diagonal lines:</p>
+
+                                    <p class="exp-text">To draw the diagonal lines of the board, I just had to connect corresponding corners of the three concentric squares. For example; one diagonal line should connect the top-right corners of all the squares (start from the top-right corner of the outter square and end on the top-right corner of the inner square). To do this, First I called the beginPath function to start a new path. Then I called the moveTo function and imputed the x and y coordinates of the top-right corner of the outter square. For the lineTo function, I inputed the x and y coordinates of the top-right corner of the inner square. Then I called the stroke function to make the line visible. This process was repeated for the other three diagonal lines, but using the other three corners. Then for the vertical and Horizontal lines of the board, a similar approach was used, but instead of using the coordinates for corners of the squares, the coordinates for the midpoints of the sides of the squares were used. For the vertical lines, the midpoints for the top and bottom side coordinates were used, and for the horizontal lines the midpints of the right and left sides were used. This means two vertical lines and two horizontal lines were drawn.</p>
+
+                                </div>
+                                
+                            </section>
+
+                            <section class="sections">
+
+                                <h5 class="heading-4">2. Placement Logic</h5>
+
+                                <div class="side-image-text">
+
+                                    <div class="project-information-2">
+
+                                        <p class="exp-text next-to-image-text" >For placement, I first had no idea of how to make the canvas respond to players clicking on it. And another thing was I had to only make the intersections interactive, not the whole canvas. Since Canvas API's main functionality is drawing, I made the canvas draw cows on the intersection the player clicks on. And how this was done was to save the coordinates of the interscetion clicked on and re-draw the whole board again, but this time with the cow centered at the coordinate of that intersection.</p>
+
+                                        <p class="exp-text next-to-image-text">To do this I used an event listener that is triggered when players clicks the canvas. An event listener is a function that waits for the user to perform a certain action (this case made to be clicking), when the action is performed the function runs another function that does something. So, when the player clicks anywhere on the canvas, the event listener will then run a function that checks where the player clicked and check if they clicked near anyone of the intersections. If the player did not click near any intersections nothing happens, but if they did, the function checks if the point is occupied already to avoid invalid moves. If it's not, the function saves the coordinates of that point in an array called tokens which stores coordinates for placed cows. And since the drawing board logic was made to redraw the board after every move, when the board is drawn after a valid move (clicked on an empty intersection) a new piece will be drawn on the newly saved coordinates.</p>
+                                    </div>
+
+                                    <div class="placement-image-container">
+
+                                        <figure class="placement-figure">
+
+                                            <img class="board-image" id="openModal-3" src="../Assets/Images/Placement.png" alt="">
+
+                                            <figcaption class="fig-text">Figure 4: This figure shows the placement phase of the game.</figcaption>
+
+                                        </figure>
+
+                                    </div>
+
+                                    <div class="modal" id="modal-3">
+
+                                        <div class="inner-modal-container">
+
+                                            <button class="closeModal" id="closeModal-3">&#10060;</button>
+
+                                            <img class="modal-inner" src="../Assets/Images/Placement.png" alt="">
+
+                                        </div>
+                                            
+                                    </div>
+
+                                </div>
+                                
+                            </section>
+                            
+                        </section>
+
+                    </div>
+
+                </section> 
+
+            </div>
+
+        </section>
+             
+    </main>
+
+    <footer class="footer-section">
+
+        <a id="previous-page-navigation"><button class="nav-buttons prev-tooltip" data-tooltip="Go to previous page">&xlarr;</button></a>
+
+        <a class="next-page" id="next-page-navigation"><button class="nav-buttons next-tooltip" data-tooltip="Go to next page">&xrarr;</button></a>
+
+    </footer>
+    
+</body>
+</html>
