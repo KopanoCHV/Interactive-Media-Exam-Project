@@ -776,6 +776,11 @@ input{
     font-weight: 700;
 }
 
+.alert{
+
+    color: rgb(254, 38, 38);
+}
+
 @media( max-width: 1024px){
 
     .menu-image{
