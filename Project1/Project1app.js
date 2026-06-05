@@ -1,3 +1,5 @@
+//----Loading Screen Logic------
+
 let loader = document.querySelector("#page-load");
 
 window.addEventListener("load", (event) => {
@@ -5,6 +7,8 @@ window.addEventListener("load", (event) => {
     loader.style.display = "none";
 
 });
+
+//----Image modal logic----------
 
 const openImg = document.getElementById("openModal");
 const closeBtn = document.getElementById("closeModal");
@@ -54,6 +58,8 @@ closeBtn4.addEventListener("click", (event) => {
     modal4.classList.remove("open");
 });
 
+//----Page Navigations logic------------
+
 const homeNav = document.querySelector("#home-navigation");
 const portfolioNav = document.querySelector("#portfolio-navigation");
 const projectsNav = document.querySelector("#projects-navigation");
@@ -95,6 +101,8 @@ prevPageNav.addEventListener("click", (event) => {
 
     window.location.href = "../PortfolioPage/PortfolioPage.html";
 });
+
+//----Projects sub-navigation links logic--------
 
 const controlBtn = document.querySelector("#modal-control");
 
@@ -141,6 +149,8 @@ Project4.addEventListener("click", (event) => {
 
 });
 
+//----Navigation Highlight logic-------------
+
 // Using window.location to get the path of the open page.
 
 const currentPage = window.location.pathname;
@@ -164,7 +174,7 @@ if(currentPage === '/Project1/Project1.html'){
     Project4.classList.remove("current");
 }
 
-// Dark mode logic
+//------Dark mode logic--------------------
 
 const switchBtn = document.querySelector("#switch");
 
