@@ -44,31 +44,31 @@ const nextPageNav = document.querySelector("#next-page-navigation");
 
 homeNav.addEventListener("click", (event) => {
 
-    window.location.href = "../index.html";
+    window.location.href = "/index.html";
 
 });
 
 portfolioNav.addEventListener("click", (event) => {
 
-    window.location.href = "../PortfolioPage/PortfolioPage.html";
+    window.location.href = "/PortfolioPage/PortfolioPage.html";
 
 });
 
 projectsNav.addEventListener("click", (event) => {
 
-    window.location.href = "../Project1/Project1.html";
+    window.location.href = "/Project1/Project1.html";
 
 })
 
 aboutNav.addEventListener("click", (event) => {
 
-    window.location.href = "../AboutPage/AboutPage.html";
+    window.location.href = "/AboutPage/AboutPage.html";
 
 });
 
 nextPageNav.addEventListener("click", (event) => {
 
-    window.location.href = "../PortfolioPage/PortfolioPage.html"
+    window.location.href = "/PortfolioPage/PortfolioPage.html"
 
 });
 
