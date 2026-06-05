@@ -72,7 +72,7 @@ nextPageNav.addEventListener("click", (event) => {
 
 });
 
-//----Project page sub navigation logic---------
+//----Project page sub-navigation logic---------
 
 const controlBtn = document.querySelector("#modal-control");
 

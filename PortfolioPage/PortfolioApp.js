@@ -1,3 +1,5 @@
+//----Load Page logic----------
+
 let loader = document.querySelector("#page-load");
 
 window.addEventListener("load", (event) => {
@@ -5,6 +7,8 @@ window.addEventListener("load", (event) => {
     loader.style.display = "none";
 
 });
+
+//----Page Navigation links logic-----------
 
 const homeNav = document.querySelector("#home-navigation");
 const portfolioNav = document.querySelector("#portfolio-navigation");
@@ -47,6 +51,8 @@ prevPageNav.addEventListener("click", (event) => {
 
     window.location.href = "../index.html";
 });
+
+//----Project page sub-navigation logic------------
 
 const controlBtn = document.querySelector("#modal-control");
 
@@ -93,6 +99,8 @@ Project4.addEventListener("click", (event) => {
 
 });
 
+//-----Navigation Highlight logic-------------
+
 // Using window.location to get the path of the open page.
 
 const currentPage = window.location.pathname;
@@ -116,7 +124,7 @@ if(currentPage === '/PortfolioPage/PortfolioPage.html'){
     Project4.classList.remove("current");
 }
 
-// Dark mode logic
+//----Dark mode logic-----------------
 
 const switchBtn = document.querySelector("#switch");
 
@@ -152,6 +160,8 @@ switchBtn.addEventListener("change", (event) => {
 
 });
 
+//----Project View Logic------------------
+
 const wakeUpView = document.querySelector("#wake-up-view");
 
 const morabarabaView = document.querySelector("#morabaraba-view");
@@ -182,6 +192,7 @@ climbUpView.addEventListener("click", (event) => {
     window.location.href = "../Project4/Project4.html";
 });
 
+//----View Project button appear/disappear logic--------
 
 const morabarabaCont = document.querySelector("#morabaraba-container");
 
