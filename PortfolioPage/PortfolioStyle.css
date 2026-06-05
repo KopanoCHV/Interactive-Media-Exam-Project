@@ -20,8 +20,6 @@
 
     font-family: sans-serif;
 
-    /*color: rgb(189, 189, 189);*/
-
     color: #F7F0F0;
 }
 
@@ -36,8 +34,6 @@
     position: absolute;
 
     color: rgb(37, 37, 37);
-
-    /*background-color: rgb(198, 198, 198);*/
 
     background-color: #F7F0F0;
 
@@ -77,8 +73,6 @@
 
     text-decoration: none;
 
-    /*color: rgb(189, 189, 189);*/
-
     color: #F7F0F0;
 
     transition: color 0.25s;
@@ -109,8 +103,6 @@
 .heading{
 
     font-size: 3.5rem;
-
-    /*color: rgb(189, 189, 189);*/
 
     color: #F7F0F0;
 }
@@ -211,8 +203,6 @@
 
     width: 350px;
 
-    /*color: rgb(211, 211, 211);*/
-
     color: #F7F0F0;
 
     margin: 15px;
@@ -266,8 +256,6 @@
 
     color: rgb(37, 37, 37);
 
-    /*background-color: rgb(198, 198, 198);*/
-
     background-color: #F7F0F0;
 
     padding: 5px;
@@ -306,8 +294,6 @@
     position: absolute;
 
     color: rgb(37, 37, 37);
-
-    /*background-color: rgb(198, 198, 198);*/
 
     background-color: #F7F0F0;
 
@@ -348,8 +334,6 @@
 
     color: rgb(37, 37, 37);
 
-    /*background-color: rgb(198, 198, 198);*/
-
     background-color: #F7F0F0;
 
     padding: 5px;
@@ -386,8 +370,6 @@
     position: absolute;
 
     color: rgb(37, 37, 37);
-
-    /*background-color: rgb(198, 198, 198);*/
 
     background-color: #F7F0F0;
 
@@ -426,8 +408,6 @@
 
     color: rgb(37, 37, 37);
 
-    /*background-color: rgb(198, 198, 198);*/
-
     background-color: #F7F0F0;
 
     padding: 5px;
@@ -464,8 +444,6 @@
     position: absolute;
 
     color: rgb(37, 37, 37);
-
-    /*background-color: rgb(198, 198, 198);*/
 
     background-color: #F7F0F0;
 
@@ -541,8 +519,6 @@
     height: 15px;
 
     background-color: #1A2A4A;
-
-    /*color: rgb(198, 198, 198);*/
 
     color: #F7F0F0;
 
@@ -626,8 +602,6 @@
 
 .switch{
 
-    /*background-color: rgb(198, 198, 198);*/
-
     background-color: #F7F0F0;
 
     width: 100px;
@@ -661,8 +635,6 @@
     position: absolute;
 
     color: rgb(37, 37, 37);
-
-    /*background-color: rgb(198, 198, 198);*/
 
     background-color: #F7F0F0;
 
@@ -811,8 +783,6 @@ input{
 
         width: 300px;
 
-        /*color: rgb(211, 211, 211);*/
-
         color: #F7F0F0;
 
         margin: 15px;
@@ -829,8 +799,6 @@ input{
         position: absolute;
 
         color: rgb(37, 37, 37);
-
-        /*background-color: rgb(198, 198, 198);*/
 
         background-color: #F7F0F0;
 
@@ -864,8 +832,6 @@ input{
 
         color: rgb(37, 37, 37);
 
-        /*background-color: rgb(198, 198, 198);*/
-
         background-color: #F7F0F0;
 
         padding: 5px;
@@ -897,8 +863,6 @@ input{
         position: absolute;
 
         color: rgb(37, 37, 37);
-
-        /*background-color: rgb(198, 198, 198);*/
 
         background-color: #F7F0F0;
 
@@ -1039,8 +1003,6 @@ input{
 
         color: rgb(37, 37, 37);
 
-        /*background-color: rgb(198, 198, 198);*/
-
         background-color: #F7F0F0;
 
         padding: 5px;
@@ -1072,8 +1034,6 @@ input{
         position: absolute;
 
         color: rgb(37, 37, 37);
-
-        /*background-color: rgb(198, 198, 198);*/
 
         background-color: #F7F0F0;
 
@@ -1319,8 +1279,6 @@ input{
         height: 50px;
 
         width: 250px;
-
-        /*color: rgb(211, 211, 211);*/
 
         color: #F7F0F0;
 

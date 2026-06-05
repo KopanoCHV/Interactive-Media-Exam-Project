@@ -34,8 +34,6 @@
 
     background-color: #2A5F6E;
 
-    /*color: rgb(189, 189, 189);*/
-
     color: #F7F0F0;
 
 }
@@ -47,8 +45,6 @@
     font-weight: 700;
 
     font-family: sans-serif;
-
-    /*color: rgb(189, 189, 189);*/
 
     color: #F7F0F0;
 
@@ -67,8 +63,6 @@
     position: absolute;
 
     color: rgb(37, 37, 37);
-
-    /*background-color: rgb(198, 198, 198);*/
 
     background-color: #F7F0F0;
 
@@ -115,8 +109,6 @@
 .navigation-container ul li a{
 
     text-decoration: none;
-
-    /*color: rgb(189, 189, 189);*/
 
     color: #F7F0F0;
 
@@ -174,8 +166,6 @@
     position: absolute;
 
     color: rgb(37, 37, 37);
-
-    /*background-color: rgb(198, 198, 198);*/
 
     background-color: #F7F0F0;
 
@@ -286,8 +276,6 @@
 
     color: rgb(37, 37, 37);
 
-    /*background-color: rgb(198, 198, 198);*/
-
     background-color: #F7F0F0;
 
     padding: 5px;
@@ -363,8 +351,6 @@
     position: absolute;
 
     color: rgb(37, 37, 37);
-
-    /*background-color: rgb(198, 198, 198);*/
 
     background-color: #F7F0F0;
 
@@ -459,8 +445,6 @@
 
 .symbols{
 
-    /*color: rgb(224, 223, 223);*/
-
     color: #F7F0F0;
 
     font-weight: 700;
@@ -499,8 +483,6 @@
     position: absolute;
 
     color: rgb(37, 37, 37);
-
-    /*background-color: rgb(198, 198, 198);*/
 
     background-color: #F7F0F0;
 
@@ -541,8 +523,6 @@
 
     color: rgb(37, 37, 37);
 
-    /*background-color: rgb(198, 198, 198);*/
-
     background-color: #F7F0F0;
 
     padding: 5px;
@@ -581,8 +561,6 @@
     position: absolute;
 
     color: rgb(37, 37, 37);
-
-    /*background-color: rgb(198, 198, 198);*/
 
     background-color: #F7F0F0;
 
@@ -623,8 +601,6 @@
     position: absolute;
 
     color: rgb(37, 37, 37);
-
-    /*background-color: rgb(198, 198, 198);*/
 
     background-color: #F7F0F0;
 
@@ -772,8 +748,6 @@
 
     background-color: #1A2A4A;
 
-    /*color: rgb(198, 198, 198);*/
-
     color: #F7F0F0;
 
     border: none;
@@ -855,8 +829,6 @@
 
 .switch{
 
-    /*background-color: rgb(198, 198, 198);*/
-
     background-color: #F7F0F0;
 
     width: 100px;
@@ -890,8 +862,6 @@
     position: absolute;
 
     color: rgb(37, 37, 37);
-
-    /*background-color: rgb(198, 198, 198);*/
 
     background-color: #F7F0F0;
 
