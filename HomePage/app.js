@@ -97,25 +97,25 @@ const Project4 = document.querySelector("#project4");
 
 Project1.addEventListener("click", (event) => {
 
-    window.location.href = "/Project1/Project1.html";
+    window.location.href = "./Project1/Project1.html";
 
 });
 
 Project2.addEventListener("click", (event) => {
 
-    window.location.href = "/Project2/Project2.html";
+    window.location.href = "./Project2/Project2.html";
 
 });
 
 Project3.addEventListener("click", (event) => {
 
-    window.location.href = "/Project3/Project3.html";
+    window.location.href = "./Project3/Project3.html";
 
 })
 
 Project4.addEventListener("click", (event) => {
 
-    window.location.href = "/Project4/Project4.html";
+    window.location.href = "./Project4/Project4.html";
 
 });
 
