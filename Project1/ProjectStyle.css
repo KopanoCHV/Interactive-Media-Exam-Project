@@ -1,3 +1,5 @@
+/*Makes sure that all margin and padding that comes with  the browser are removed and also makes changes the font style of all the text on the page to Roboto*/
+
 *{
     margin: 0;
     padding: 0;
@@ -10,6 +12,8 @@
         "wdth" 100;
 }
 
+/*Works on the Log*/
+
 .logo{
 
     font-size: 25px;
@@ -20,6 +24,8 @@
 
     color: #F7F0F0;
 }
+
+/*Works on the tooltip of the logo when the cursor is hovered on the logo*/
 
 .logo:hover::after{
 
@@ -45,8 +51,9 @@
 
     margin-left: 5px;
 
-
 }
+
+/*Works on the size of the header and the spacing between the content inside header*/
 
 .header-section{
 
@@ -67,6 +74,8 @@
     background-color: #1A2A4A;
 }
 
+/*Removes the default styling on the navigation links and adds a new color on them*/
+
 .navigation-container ul li a{
 
     text-decoration: none;
@@ -76,6 +85,8 @@
     transition: color 0.25s;
 }
 
+/*Makes the navigation links have visual feedback when they are hovered, and also makes the cursor changes to a pointer type.*/
+
 .navigation-container ul li a:hover{
 
     color: #2A5F6E;
@@ -83,10 +94,14 @@
     cursor: pointer;
 }
 
+/*Makes the a navigation link of the current page stay*/
+
 .navigation-container ul li a.current{
 
     color: #2A5F6E;
 }
+
+/*Separates the navigation links for better representation.*/
 
 .navigation-container ul{
 
@@ -96,6 +111,8 @@
 
     gap: 20px;
 }
+
+/*Makes sure the contant in the main section is separated from the page sides and changes the page background and text*/
 
 .main-section{
 
@@ -108,6 +125,9 @@
     color: #F7F0F0;
 
 }
+
+/*works on the color of the footer, adds a black top border on the footer, and separates the navigation buttons.*/
+
 .footer-section{
 
     display: flex;
@@ -124,6 +144,8 @@
 
     background-color: #1A2A4A;
 }
+
+/*Works on the size and decoration of footer navigation buttons*/
 
 .nav-buttons{
 
@@ -142,6 +164,8 @@
     background-color: #F7F0F0;
 }
 
+/*Works on the visual feedback of the navigation button when hovered.*/
+
 .nav-buttons:hover{
 
     background-color: #A1A1A1;
@@ -149,12 +173,16 @@
     cursor: pointer;
 }
 
+/*Sets the size of the project title and makes the tooltip take the title as reference*/
+
 .heading{
 
     font-size: 3.5rem;
 
     position: relative;
 }
+
+/*Shows the tooltip when the title is hovered*/
 
 .heading:hover::after{
 
@@ -208,6 +236,8 @@
     font-size: 1.3rem;
 }
 
+/*Makes sure the heading is centered at the center of the page*/
+
 .title-container{
 
     display: flex;
@@ -216,11 +246,14 @@
 
     align-items: center;
 }
+
 .project-sections{
 
     margin-top: 10px;
 
 }
+
+/*Makes sure the project content is in a column layout and makes sure the content is well separated*/
 
 .project-information{
 
@@ -246,6 +279,8 @@
     width: 100%;
 }
 
+/*Makes the bullet points visible and makes sure the bullet points are separated*/
+
 .points{
 
     margin-top: 5px;
@@ -257,6 +292,8 @@
     padding-left: 20px;   
 }
 
+/*Defines the space that bullet points next to images can occupy and makes them be in column layout*/
+
 .side-points{
 
     width: 800px;
@@ -267,6 +304,8 @@
 
     gap: 10px;
 }
+
+/*Makes sure the image inside the figure is centered*/
 
 .in-game-figure{
 
@@ -281,10 +320,14 @@
     align-items: center;
 }
 
+/*Makes the image take the full size of the figure*/
+
 .in-game-image{
 
     width: 100%;
 }
+
+/*Makes sure the image inside the figure is centered*/
 
 .menu-image-figure{
 
@@ -297,11 +340,15 @@
     align-items: center;
 }
 
+/*Makes the image take half the size of the figure*/
+
 .menu-image{
 
     width: 50%;
 
 }
+
+/*Makes the image and text be in a coloumn layout*/
 
 .image-text{
 
@@ -312,6 +359,8 @@
     gap: 10px;
 }
 
+/*Makes sure the image is centered*/
+
 .image-container{
 
     display: flex;
@@ -320,6 +369,8 @@
 
     align-items: center;
 }
+
+/*Changes the text layout and size.*/
 
 .exp-text{
 
