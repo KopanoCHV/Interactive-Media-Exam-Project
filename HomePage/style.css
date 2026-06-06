@@ -1020,20 +1020,28 @@
     transition: 0.2s;
 }
 
+/*Changes the color of the switch when its checked*/
+
 input:checked + .switch{
 
     background-color: #2A5F6E;
 }
+
+/*Moves the circle part of the switch when clicked*/
 
 input:checked + .switch::before{
 
     transform: translateX(47px);
 }
 
+/*Hides the check box*/
+
 input{
 
     display: none;
 }
+
+/*Changes size and color of light text of the theme switch*/
 
 .light{
 
@@ -1044,6 +1052,8 @@ input{
     font-weight: 700;
 }
 
+/*Changes size and color of the dark text of the theme switch*/
+
 .dark{
 
     color: #A1A1A1;
@@ -1052,6 +1062,8 @@ input{
 
     font-weight: 700;
 }
+
+/*Works on the resposiveness to tablet screens*/
 
 @media( max-width: 1024px){
 
@@ -1183,6 +1195,8 @@ input{
     }
 
 }
+
+/*Works on resposiveness to Phone screens*/
 
 @media(max-width: 600px){
 
@@ -1346,6 +1360,8 @@ input{
         display: none;
     }
 }
+
+/*Works on the responsiveness to small screen phones*/
 
 @media(max-width: 560px){
 
