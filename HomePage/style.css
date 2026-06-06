@@ -302,6 +302,8 @@
 
 }
 
+/*Shows the tooltip for the hero-image when the image is hovered*/
+
 .hero-image-container:hover::after{
 
     content: attr(data-tooltip);
@@ -322,7 +324,7 @@
 
     box-shadow: 2px 4px 16px 0 rgba(0,0,0,0.3);
 
-    /* Placing the tooltip to the left of the button */
+    /* Placing the tooltip to the left of the image */
 
     right: 100%; 
     
@@ -334,6 +336,8 @@
 
 }
 
+/*Works on the size and orientation of the introduction text*/
+
 .intro-statement{
 
     width: 70%;
@@ -343,6 +347,8 @@
     text-align: center;
 
 }
+
+/*Centers the content in the show section while they are in a colum direction*/
 
 .show-section{
 
@@ -358,6 +364,8 @@
 
 }
 
+/*Makes sure that the image inside the container is centered.*/
+
 .info-image-container{
 
     display: flex;
@@ -372,11 +380,15 @@
  
 }
 
+/*Works on the size of the info image.*/
+
 .info-image{
 
     width: 500px;
 
 }
+
+/*Shows a tooltip of the info image when hovered*/
 
 .info-image-container:hover::after{
 
@@ -412,6 +424,8 @@
 
 }
 
+/*Makes sure the image in the figure is centered*/
+
 .info-image-container figure{
 
     display: flex;
@@ -422,10 +436,14 @@
 
 }
 
+/*Works on the size of the informatio section title for visual separation.*/
+
 .info-title{
 
     font-size: 40px;
 }
+
+/*Makes sure that the text in the information text is centered and clearly separate from each other while they are in a column layout.*/
 
 .info-text{
 
@@ -444,6 +462,8 @@
     margin-bottom: 10px;
 }
 
+/*Makes sure the contributer cards are in a row layout and they are clearly separate from each other.*/
+
 .social-proof-section{
 
     display: flex;
@@ -455,12 +475,16 @@
     padding: 20px 0;
 }
 
+/*Makes sure that the image of the contributer and their information are in a column layout and have space between them.*/
+
 .contributers{
 
     display: flex;
 
     gap:10px;
 }
+
+/*Works on making the images be in a circles shape and works on the color of the images and makes sure the letters are well centered in the image.*/
 
 .contributers-images{
 
@@ -480,6 +504,8 @@
 
     align-items: center;
 }
+
+/* works on the color of the letters in the images and their weight.*/
 
 .symbols{
 
@@ -505,10 +531,14 @@
     font-size: 1rem;
 }
 
+/*Makes sure that the tooltip uses the contributer's card as the reference.*/
+
 .musa-tooltip{
 
     position: relative;
 }
+
+/*Shows the tooltip when the card is hovered*/
 
 .musa-tooltip:hover::after{
 
@@ -544,10 +574,14 @@
 
 }
 
+/*Makes sure that the tooltip uses the contributer's card as the reference.*/
+
 .boitumelo-tooltip{
 
     position: relative;
 }
+
+/*Shows the tooltip when the card is hovered*/
 
 .boitumelo-tooltip:hover::after{
 
@@ -583,10 +617,14 @@
 
 }
 
+/*Makes sure that the tooltip uses the contributer's card as the reference.*/
+
 .ako-tooltip{
 
     position: relative;
 }
+
+/*Shows the tooltip when the card is hovered*/
 
 .ako-tooltip:hover::after{
 
@@ -622,11 +660,15 @@
 
 }
 
+/*Makes sure that the tooltip uses the contributer's card as the reference.*/
+
 .sandiso-tooltip{
 
     position: relative;
 
 }
+
+/*Shows the tooltip when the card is hovered*/
 
 .sandiso-tooltip:hover::after{
 
@@ -662,6 +704,8 @@
 
 }
 
+/*Makes the background color of change to a gray color when a image modal is open to block background content.*/
+
 .modal{
 
     background-color: rgb(45, 45, 45);
@@ -689,6 +733,8 @@
     justify-content: center;
 }
 
+/*Makes sure the image of the modal is centered*/
+
 .inner-modal-container{
 
     display: flex;
@@ -702,12 +748,16 @@
     gap: 10px;
 }
 
+/*Works on making the modal visible and on top of every content on the page.*/
+
 .modal.open{
 
     opacity: 1;
 
     z-index: 3;
 }
+
+/*Makes sure that the inner modal has half the size of the background modal*/
 
 .modal-inner{
 
@@ -720,6 +770,8 @@
     width: 65%;
 }
 
+/*Works on making the button that closes the modal*/
+
 .closeModal{
 
     padding: 10px;
@@ -730,6 +782,8 @@
 
     border: none;
 }
+
+/*Makes sure the background of the load screen covers the whole view port.*/
 
 .page-load{
 
@@ -754,12 +808,18 @@
     justify-content: center;
 }
 
+/*Sizes the text of the loading screen and changes its color*/
+
 .loading-text{
 
     font-size: 50px;
 
     font-weight: 700;
+
+    color: rgb(31, 30, 30);
 }
+
+/*Makes sure the project link is in a staright line with the drop down button next to it.*/
 
 .line{
 
@@ -769,6 +829,8 @@
 
     align-items: center;
 }
+
+/*Works on the drop down button of sub-links, making align well with porjects link.*/
 
 .arrow{
 
@@ -794,6 +856,8 @@
 
 }
 
+/*Adds a background for the sub-link modal*/
+
 .link-modal{
 
     background-color: #1A2A4A;
@@ -810,6 +874,8 @@
 
 }
 
+/*Makes the sub-link visible and makes it appear above all visible content.*/
+
 .link-modal.open {
 
     opacity: 1;
@@ -817,6 +883,8 @@
     z-index: 100;
 
 }
+
+/*Makes sure that the navigation links are in a row, have gaps between each other and are centered in the modal.*/
 
 .link-modal ul{
 
@@ -832,6 +900,8 @@
     
 }
 
+/*Makes the cursor change to a pointer type when on top of the links and sizes the links.*/
+
 .link-modal ul li a{
 
     cursor: pointer;
@@ -839,10 +909,14 @@
     font-size: 0.8rem;
 }
 
+/*Makes the color of the arrow button change when hovered for user feedback*/
+
 .arrow:hover{
 
     color: #2A5F6E;
 }
+
+/*Works on the dark mode*/
 
 .main-section.dark-mode{
 
@@ -864,6 +938,8 @@
 
     justify-content: center;
 }
+
+/*Works on making the background of the switch look morden*/
 
 .switch{
 
@@ -888,6 +964,8 @@
     align-items: center;
 
 }
+
+/*Shows the tool tip for the switch when hovered.*/
 
 .switch:hover::after{
 
@@ -920,6 +998,8 @@
     margin-top: 40px;
 
 }
+
+/*Works on the switch click shape*/
 
 .switch::before{
 
