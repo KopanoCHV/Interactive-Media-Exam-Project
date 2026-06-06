@@ -1,3 +1,5 @@
+/*Makes sure that all margin and padding that comes with  the browser are removed and also makes changes the font style of all the text on the page to Roboto*/
+
 *{
     margin: 0;
 
@@ -12,6 +14,8 @@
         "wdth" 100;
 }
 
+/*Works on the Log*/
+
 .logo{
 
     font-size: 25px;
@@ -22,6 +26,8 @@
 
     color: #F7F0F0;
 }
+
+/*Works on the tooltip of the logo when the cursor is hovered on the logo*/
 
 .logo:hover::after{
 
@@ -47,8 +53,9 @@
 
     margin-left: 5px;
 
-
 }
+
+/*Works on the size of the header and the spacing between the content inside header*/
 
 .header-section{
 
@@ -69,6 +76,8 @@
     background-color: #1A2A4A;
 }
 
+/*Removes the default styling on the navigation links and adds a new color on them*/
+
 .navigation-container ul li a{
 
     text-decoration: none;
@@ -78,6 +87,8 @@
     transition: color 0.25s;
 }
 
+/*Makes the navigation links have visual feedback when they are hovered, and also makes the cursor changes to a pointer type.*/
+
 .navigation-container ul li a:hover{
 
     color: #2A5F6E;
@@ -86,10 +97,14 @@
     
 }
 
+/*Makes the a navigation link of the current page stay*/
+
 .navigation-container ul li a.current{
 
     color: #2A5F6E;
 }
+
+/*Separates the navigation links for better representation.*/
 
 .navigation-container ul{
 
@@ -106,6 +121,8 @@
 
     color: #F7F0F0;
 }
+
+/*works on the color of the footer, adds a black top border on the footer, and separates the navigation buttons.*/
 
 .footer-section{
 
@@ -124,6 +141,8 @@
     background-color: #1A2A4A;
 }
 
+/*Centers the page heading*/
+
 .title-container{
 
     display: flex;
@@ -134,6 +153,8 @@
 
     height: 100px;
 }
+
+/*Works on the size and decoration of footer navigation buttons*/
 
 .nav-buttons{
 
@@ -153,12 +174,16 @@
  
 }
 
+/*Works on the visual feedback of the navigation button when hovered.*/
+
 .nav-buttons:hover{
 
     background-color: #A1A1A1;
 
     cursor: pointer;
 }
+
+/*Makes sure the text is in a column form and centers the content in the main section and changes the background color of the main section*/
 
 .main-section{
 
@@ -173,6 +198,8 @@
     background-color: #2A5F6E;
 }
 
+/*Makes sure the cards of projects are in rows of three, with a with of 350px and adds spaces between the cards.*/
+
 .projects-container{
 
     padding: 20px;
@@ -184,6 +211,8 @@
     gap: 20px;
 
 }
+
+/*Defines the dimentions of the card images containers*/
 
 .projects-image-container{
 
@@ -197,6 +226,8 @@
 
 }
 
+/*Defines the dimetions of the card description containers*/
+
 .project-description-container{
 
     height: 50px;
@@ -209,6 +240,8 @@
 
 }
 
+/*Makes the image be the same size as their containers and makes the corners smooth*/
+
 .image{
 
     width: 100%;
@@ -219,6 +252,8 @@
 
     aspect-ratio: 1;
 }
+
+/*Defines the dimesions of the project cards, changes their color and makes sure that every content in the cards is centered*/
 
 .projects{
 
@@ -239,10 +274,14 @@
     align-items: center;
 }
 
+/*Makes the tooltip take the previous button as the reference.*/
+
 .prev-tooltip{
 
     position: relative;
 }
+
+/*Shows the tooltip for the prev-button when the button is hovered.*/
 
 .prev-tooltip:hover::after{
 
@@ -278,10 +317,14 @@
 
 }
 
+/*Makes the tooltip take the next-button as reference*/
+
 .next-tooltip{
 
     position: relative;
 }
+
+/*Shows the tooltip when the next-button is hovered*/
 
 .next-tooltip:hover::after{
 
@@ -317,10 +360,14 @@
 
 }
 
+/*Makes the tooltip take the morabaraba project card as reference.*/
+
 .morabaraba-tooltip{
 
     position: relative;
 }
+
+/*Shows the tooltip when hovering the morabaraba card*/
 
 .morabaraba-tooltip:hover::after{
 
@@ -354,10 +401,14 @@
 
 }
 
+/*Makes the tooltip take the climb up card as reference*/
+
 .climb-up-tooltip{
 
     position: relative;
 }
+
+/*Shows the tooltip when the climb up card is hovered*/
 
 .climb-up-tooltip:hover::after{
 
@@ -391,10 +442,14 @@
 
 }
 
+/*Makes the tooltip take the back home card as reference*/
+
 .back-home-tooltip{
 
     position: relative;
 }
+
+/*Shows the tooltip when the back home card is hovered*/
 
 .back-home-tooltip:hover::after{
 
@@ -428,10 +483,14 @@
 
 }
 
+/*Makes the tooltip take the wake up card as reference*/
+
 .wake-up-tooltip{
 
     position: relative;
 }
+
+/*Shows the tooltip when the wake up card is hovered*/
 
 .wake-up-tooltip:hover::after{
 
@@ -465,6 +524,8 @@
 
 }
 
+/*Makes sure the load screen covers the whole view port*/
+
 .page-load{
 
     background-color: #1A2A4A;
@@ -488,12 +549,18 @@
     justify-content: center;
 }
 
+/*Sizes the loading text and changes its color*/
+
 .loading-text{
 
     font-size: 50px;
 
     font-weight: 700;
+
+    color: rgb(31, 30, 30);
 }
+
+/*Makes sure the project link is in a staright line with the drop down button next to it.*/
 
 .line{
 
@@ -503,6 +570,8 @@
 
     align-items: center;
 }
+
+/*Works on the drop down button of sub-links, making align well with porjects link.*/
 
 .arrow{
 
@@ -528,6 +597,8 @@
 
 }
 
+/*Adds a background for the sub-link modal*/
+
 .link-modal{
 
     background-color: #1A2A4A;
@@ -544,6 +615,8 @@
 
 }
 
+/*Makes the sub-link visible and makes it appear above all visible content.*/
+
 .link-modal.open {
 
     opacity: 1;
@@ -551,6 +624,8 @@
     z-index: 100;
 
 }
+
+/*Makes sure that the navigation links are in a row, have gaps between each other and are centered in the modal.*/
 
 .link-modal ul{
 
@@ -566,6 +641,8 @@
     
 }
 
+/*Makes the cursor change to a pointer type when on top of the links and sizes the links.*/
+
 .link-modal ul li a{
 
     cursor: pointer;
@@ -573,11 +650,14 @@
     font-size: 0.8rem;
 }
 
+/*Makes the color of the arrow button change when hovered for user feedback*/
+
 .arrow:hover{
 
     color: #2A5F6E;
 }
 
+/*Works on the dark mode*/
 
 .main-section.dark-mode{
 
@@ -599,6 +679,8 @@
 
     justify-content: center;
 }
+
+/*Works on making the background of the switch look morden*/
 
 .switch{
 
@@ -623,6 +705,8 @@
     align-items: center;
 
 }
+
+/*Shows the tool tip for the switch when hovered.*/
 
 .switch:hover::after{
 
@@ -656,6 +740,8 @@
 
 }
 
+/*Works on the switch click shape*/
+
 .switch::before{
 
     position: absolute;
@@ -675,20 +761,28 @@
     transition: 0.2s;
 }
 
+/*Changes the color of the switch when its checked*/
+
 input:checked + .switch{
 
     background-color: #2A5F6E;
 }
+
+/*Moves the circle part of the switch when clicked*/
 
 input:checked + .switch::before{
 
     transform: translateX(47px);
 }
 
+/*Hides the check box*/
+
 input{
 
     display: none;
 }
+
+/*Changes size and color of light text of the theme switch*/
 
 .light{
 
@@ -699,6 +793,8 @@ input{
     font-weight: 700;
 }
 
+/*Changes size and color of the dark text of the theme switch*/
+
 .dark{
 
     color: #A1A1A1;
@@ -707,6 +803,8 @@ input{
 
     font-weight: 700;
 }
+
+/*Makes the view project appear on top of card images and makes it habe a transparent background a*/
 
 .view-button{
 
@@ -738,6 +836,8 @@ input{
 
 }
 
+/*Makes the button expand when hovered*/
+
 .view-button:hover{
 
     font-size: 1.3rem;
@@ -746,11 +846,15 @@ input{
 
 }
 
+/*makes the view button appear*/
+
 .view-button.appear{
 
     display: flex;
 
 }
+
+/*Works on the resposiveness to tablet screens*/
 
 @media( max-width: 1024px){
 
@@ -968,6 +1072,8 @@ input{
     }
 }
 
+/*Works on resposiveness to Phone screens*/
+
 @media( max-width: 600px){
 
     .logo{
@@ -1151,6 +1257,8 @@ input{
         display: none;
     }
 }
+
+/*Works on the responsiveness to small screen phones*/
 
 @media(max-width: 560px){
 
