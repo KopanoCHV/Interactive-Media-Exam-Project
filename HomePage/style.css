@@ -1,3 +1,5 @@
+/*Makes sure that all margin and padding that comes with  the browser are removed and also makes changes the font style of all the text on the page to Roboto*/
+
 *{
     margin: 0;
     padding: 0;
@@ -9,6 +11,8 @@
     font-variation-settings:
         "wdth" 100;
 }
+
+/*works on the color of the footer, adds a black top border on the footer, and pushes the navigation button to the right-side of the footer.*/
 
 .home-footer{
 
@@ -27,6 +31,7 @@
     background-color: #1A2A4A;
 }
 
+/*Adds space on the sides of the main section so that the content is not too close to the edges of the page and to create separation from the header and the footer of the page. And changes the text and background color of the main content*/
 
 .main-section{
 
@@ -37,6 +42,8 @@
     color: #F7F0F0;
 
 }
+
+/*Works on the Log*/
 
 .logo{
 
@@ -51,6 +58,8 @@
     cursor: default;
 
 }
+
+/*Works on the tooltip of the logo when the cursor is hovered on the logo*/
 
 .logo:hover::after{
 
@@ -76,8 +85,9 @@
 
     margin-left: 5px;
 
-
 }
+
+/*Works on the size of the header and the spacing between the content inside header*/
 
 .header-section{
 
@@ -99,12 +109,16 @@
     
 }
 
+/*Separates the navigation links for better representation.*/
+
 .navigation-container ul{
 
     display: flex;
 
     gap: 20px;
 }
+
+/*Removes the default styling on the navigation links and adds a new color on them*/
 
 .navigation-container ul li a{
 
@@ -115,6 +129,8 @@
     transition: color 0.25s;
 }
 
+/*Makes the navigation links have visual feedback when they are hovered, and also makes the cursor changes to a pointer type.*/
+
 .navigation-container ul li a:hover{
 
     color: #2A5F6E;
@@ -122,15 +138,21 @@
     cursor: pointer;
 }
 
+/*Makes the a navigation link of the current page stay*/
+
 .navigation-container ul li a.current{
 
     color: #2A5F6E;
 }
 
+/*Removes default styling on navigations*/
+
 .navigation-container ul{
 
     list-style: none;
 }
+
+/*Works on the size and decoration of footer navigation buttons*/
 
 .nav-buttons{
 
@@ -150,10 +172,14 @@
 
 }
 
+/*Declares the position that the tooltip should use as reference.*/
+
 .next-tooltip{
 
     position: relative;
 }
+
+/*Shows the tooltip of the next button when the cursor is hovered over the button.*/
 
 .next-tooltip:hover::after{
 
@@ -189,12 +215,16 @@
 
 }
 
+/*Works on the visual feedback of the navigation button when hovered.*/
+
 .nav-buttons:hover{
 
     background-color: #A1A1A1;
 
     cursor: pointer;
 }
+
+/*Works on the orientation of content in the hero section and the spacing between the hero section and other content on the page.*/
 
 .hero-section{
 
@@ -207,6 +237,8 @@
     margin: 10px 0;
 }
 
+/*Works on the size and orientation of the Hero title to visualy separate it from other content.*/
+
 .hero-title{
 
     font-size: 60px;
@@ -214,6 +246,8 @@
     text-align: center;
 
 }
+
+/*Works on the layout of the hero text*/
 
 .hero-text{
 
@@ -231,6 +265,8 @@
 
 }
 
+/*Works on the size and orientation of the hero image*/
+
 .hero-image-container{
 
     display: flex;
@@ -247,6 +283,8 @@
 
     position: relative; /*Makes the object the reference for the position of the tooltip*/
 }
+
+/*Makes the figure center the image.*/
 
 .hero-image-container figure{
 
