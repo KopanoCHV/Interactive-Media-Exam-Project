@@ -1,3 +1,5 @@
+/*Makes sure that all margin and padding that comes with  the browser are removed and also makes changes the font style of all the text on the page to Roboto*/
+
 *{
     margin: 0;
     padding: 0;
@@ -10,6 +12,8 @@
         "wdth" 100;
 }
 
+/*Works on the Log*/
+
 .logo{
 
     font-size: 25px;
@@ -20,6 +24,8 @@
 
     color: #F7F0F0;
 }
+
+/*Works on the tooltip of the logo when the cursor is hovered on the logo*/
 
 .logo:hover::after{
 
@@ -47,6 +53,8 @@
 
 }
 
+/*Works on the size of the header and the spacing between the content inside header*/
+
 .header-section{
 
     display: flex;
@@ -66,6 +74,8 @@
     background-color: #1A2A4A;
 }
 
+/*Removes the default styling on the navigation links and adds a new color on them*/
+
 .navigation-container ul li a{
 
     text-decoration: none;
@@ -75,6 +85,8 @@
     transition: color 0.25s;
 }
 
+/*Makes the navigation links have visual feedback when they are hovered, and also makes the cursor changes to a pointer type.*/
+
 .navigation-container ul li a:hover{
 
     color: #2A5F6E;
@@ -82,10 +94,14 @@
     cursor: pointer;
 }
 
+/*Makes the a navigation link of the current page stay*/
+
 .navigation-container ul li a.current{
 
     color: #2A5F6E;
 }
+
+/*Separates the navigation links for better representation.*/
 
 .navigation-container ul{
 
@@ -95,6 +111,8 @@
 
     gap: 20px;
 }
+
+/*Makes sure the contant in the main section is separated from the page sides and changes the page background and text*/
 
 .main-section{
 
@@ -107,12 +125,16 @@
     color: #F7F0F0;
 }
 
+/*Sets the size of the project title and makes the tooltip take the title as reference*/
+
 .heading{
 
     font-size: 3.5rem;
 
     position: relative;
 }
+
+/*Shows the tooltip when the title is hovered*/
 
 .heading:hover::after{
 
@@ -166,6 +188,8 @@
     font-size: 1.3rem;
 }
 
+/*Makes sure the heading is centered at the center of the page*/
+
 .title-container{
 
     display: flex;
@@ -174,11 +198,14 @@
 
     align-items: center;
 }
+
 .project-sections{
 
     margin-top: 10px;
 
 }
+
+/*Makes sure the project content is in a column layout and makes sure the content is well separated*/
 
 .project-information{
 
@@ -191,6 +218,8 @@
     gap: 10px;
 }
 
+/*Makes the bullet points visible and makes sure the bullet points are separated*/
+
 .points{
 
     margin-top: 5px;
@@ -202,12 +231,16 @@
     padding-left: 20px;   
 }
 
+/*Changes the text layout and size.*/
+
 .exp-text{
 
     font-size: 1.3rem;
 
     text-align: justify;
 }
+
+/*works on the color of the footer, adds a black top border on the footer, and separates the navigation buttons.*/
 
 .footer-section{
 
@@ -226,6 +259,8 @@
     background-color: #1A2A4A;
 }
 
+/*Works on the size and decoration of footer navigation buttons*/
+
 .nav-buttons{
 
     padding: 10px;
@@ -242,6 +277,8 @@
 
     background-color: #F7F0F0;
 }
+
+/*Works on the visual feedback of the navigation button when hovered.*/
 
 .nav-buttons:hover{
 
@@ -279,10 +316,14 @@
     gap: 20px;
 }
 
+/*Makes the tooltip take the previous button as reference*/
+
 .prev-tooltip{
 
     position: relative;
 }
+
+/*Shows the tooltip for the prev-button when the button is hovered.*/
 
 .prev-tooltip:hover::after{
 
@@ -318,10 +359,14 @@
 
 }
 
+/*Makes the tooltip take the next-button as reference*/
+
 .next-tooltip{
 
     position: relative;
 }
+
+/*Shows the tooltip when the next-button is hovered*/
 
 .next-tooltip:hover::after{
 
@@ -357,6 +402,8 @@
 
 }
 
+/*Makes the background color of change to a gray color when a image modal is open to block background content.*/
+
 .modal{
 
     background-color: rgb(35, 35, 35);
@@ -384,6 +431,8 @@
     justify-content: center;
 }
 
+/*Makes sure the image of the modal is centered*/
+
 .inner-modal-container{
 
     display: flex;
@@ -399,12 +448,16 @@
     width: 100%;
 }
 
+/*Works on making the modal visible and on top of every content on the page.*/
+
 .modal.open{
 
     opacity: 1;
 
     z-index: 3;
 }
+
+/*Makes sure that the inner modal has 70% the size of the background modal*/
 
 .modal-inner{
 
@@ -447,6 +500,8 @@
     width: 70%;
 }
 
+/*Works on making the button that closes the modal*/
+
 .closeModal{
 
     padding: 10px;
@@ -457,6 +512,8 @@
 
     border: none;
 }
+
+/*Makes sure the background of the load screen covers the whole view port.*/
 
 .page-load{
 
@@ -481,11 +538,15 @@
     justify-content: center;
 }
 
+/*Sizes the text of the loading screen and changes its color*/
+
 .loading-text{
 
     font-size: 50px;
 
     font-weight: 700;
+
+    color: rgb(31, 30, 30);
 }
 
 .menu-image-container{
@@ -496,6 +557,8 @@
 
     align-items: center;
 }
+
+/*Makes sure the image in the figure is centered*/
 
 .menu-figure{
 
@@ -508,10 +571,14 @@
     align-items: center;
 }
 
+/*Makes the image take 40% of is figure's size*/
+
 .menu-image{
 
     width: 40%;
 }
+
+/*Makes sure the image in the figure is centered*/
 
 .maze-figure{
 
@@ -526,6 +593,8 @@
     width: 90%;
 }
 
+/*Makes sure the image in the figure is centered*/
+
 .mini-map-figure{
 
     display: flex;
@@ -538,10 +607,14 @@
 
 }
 
+/*Makes sure the image in the figure is centered*/
+
 .BOR-figure{
 
     text-align: center;
 }
+
+/*Makes sure the image in the figure is centered*/
 
 .paper-figure{
 
@@ -554,10 +627,14 @@
     align-items: center;
 }
 
+/*Makes sure the image in the figure is centered*/
+
 .challenges-figure{
 
     text-align: center;
 }
+
+/*Makes sure the project link is in a staright line with the drop down button next to it.*/
 
 .line{
 
@@ -567,6 +644,8 @@
 
     align-items: center;
 }
+
+/*Works on the drop down button of sub-links, making align well with porjects link.*/
 
 .arrow{
 
@@ -592,6 +671,8 @@
 
 }
 
+/*Adds a background for the sub-link modal*/
+
 .link-modal{
 
     background-color: #1A2A4A;
@@ -608,6 +689,8 @@
 
 }
 
+/*Makes the sub-link visible and makes it appear above all visible content.*/
+
 .link-modal.open {
 
     opacity: 1;
@@ -615,6 +698,8 @@
     z-index: 100;
 
 }
+
+/*Makes sure that the navigation links are in a row, have gaps between each other and are centered in the modal.*/
 
 .link-modal ul{
 
@@ -630,6 +715,8 @@
     
 }
 
+/*Makes the cursor change to a pointer type when on top of the links and sizes the links.*/
+
 .link-modal ul li a{
 
     cursor: pointer;
@@ -637,15 +724,21 @@
     font-size: 0.8rem;
 }
 
+/*Makes the color of the arrow button change when hovered for user feedback*/
+
 .arrow:hover{
 
     color: #2A5F6E;
 }
 
+/*Changes the size of the figure caption*/
+
 .fig-text{
 
     font-size: 1rem;
 }
+
+/*Works on the dark mode*/
 
 .main-section.dark-mode{
 
@@ -666,6 +759,8 @@
 
     justify-content: center;
 }
+
+/*Works on making the background of the switch look morden*/
 
 .switch{
 
@@ -689,6 +784,8 @@
 
     align-items: center;
 }
+
+/*Shows the tool tip for the switch when hovered.*/
 
 .switch:hover::after{
 
@@ -724,6 +821,8 @@
 
 }
 
+/*Works on the switch click shape*/
+
 .switch::before{
 
     position: absolute;
@@ -743,20 +842,28 @@
     transition: 0.2s;
 }
 
+/*Changes the color of the switch when its checked*/
+
 input:checked + .switch{
 
     background-color: #2A5F6E;
 }
+
+/*Moves the circle part of the switch when clicked*/
 
 input:checked + .switch::before{
 
     transform: translateX(47px);
 }
 
+/*Hides the check box*/
+
 input{
 
     display: none;
 }
+
+/*Changes size and color of light text of the theme switch*/
 
 .light{
 
@@ -767,6 +874,8 @@ input{
     font-weight: 700;
 }
 
+/*Changes size and color of the dark text of the theme switch*/
+
 .dark{
 
     color: #A1A1A1;
@@ -776,10 +885,14 @@ input{
     font-weight: 700;
 }
 
+/*Used to show unavailable project link*/
+
 .alert{
 
     color: rgb(250, 62, 62);
 }
+
+/*Works on the resposiveness to tablet screens*/
 
 @media( max-width: 1024px){
 
@@ -902,6 +1015,8 @@ input{
         display: none;
     }
 }
+
+/*Works on resposiveness to Phone screens*/
 
 @media( max-width: 600px){
 
@@ -1073,6 +1188,8 @@ input{
         display: none;
     }
 }
+
+/*Works on the responsiveness to small screen phones*/
 
 @media(max-width: 560px){
 
