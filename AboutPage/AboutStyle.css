@@ -377,11 +377,11 @@
     z-index: 3;
 }
 
-/*Makes sure that the inner modal has 90% the size of the background modal*/
+/*Makes sure that the inner modal has 60% the size of the background modal*/
 
 .modal-inner{
 
-    width: 90%;
+    width: 60%;
 }
 
 /*Works on making the button that closes the modal*/
@@ -715,6 +715,11 @@ input{
 
     }
 
+    .modal-inner{
+
+        width: 50%;
+    }
+
     .switch::before{
 
         width: 35px;
@@ -881,6 +886,11 @@ input{
         gap: 30px;
 
         padding: 40px 0;
+    }
+
+    .modal-inner{
+
+        width: 70%;
     }
 }
 
