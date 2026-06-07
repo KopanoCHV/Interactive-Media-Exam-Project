@@ -11,12 +11,12 @@ What is this project about?
 
 Why is this project useful?
 
--This project can be accessed by employers and collaborators who may want to work with the author to find out the author's skills and see the project developed as concrete evidence.
--The project provides multiple ways to get in touch with the author for future collaborations.
+- Can be accessed by employers and collaborators who may want to work with the author to find out the author's skills and see the project developed as concrete evidence.
+- The project provides multiple ways to get in touch with the author for future collaborations.
 
 How to contribute/use it?
 
--Collaborators can use the project to get in touch with the author.
+- Collaborators can use the project to get in touch with the author.
 
 File Structure of the project:
 
