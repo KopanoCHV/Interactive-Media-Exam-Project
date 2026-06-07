@@ -20,45 +20,35 @@ How to contribute/use it?
 
 File Structure of the project:
 
-Interactive-Media-Exam-Project
-|
-|--AboutPage/
-|      |---AboutPage.html
-|      |---AboutPageApp.js
-|      |---AboutStyle.css
-|
-|--Assets/
-|      |---Images
-|
-|--HomePage/
-|      |---app.js
-|      |---style.css
-|
-|--PortfolioPage/
-|      |---PortfolioApp.js
-|      |---PortfolioPage.html
-|      |---PortfolioStyle.css
-|
-|--Project1/
-|     |---Project1.html
-|     |---Project1app.js
-|     |---ProjectStyle.css
-|
-|--Project2/
-|     |---Project2.html
-|     |---Project2app.js
-|     |---Project2Style.css
-|
-|--Project3/
-|     |---Project3.html
-|     |---Project3app.js
-|     |---Project3Style.css
-|
-|--Project4/
-|     |---Project4.html
-|     |---Project4app.js
-|     |---Project4Style.css
-|
-|--README.md
-|
-|--index.html
+- Interactive-Media-Exam-Project/
+    - AboutPage/
+        - AboutPage.html
+        - AboutPageApp.js
+        - AboutStyle.css
+    - Assets/
+        - Images
+    - HomePage/
+        - app.js
+        -  style.css
+    - PortfolioPage/
+        - PortfolioApp.js
+        - PortfolioPage.html
+        - PortfolioStyle.css
+    - Project1/
+        - Project1.html
+        - Project1app.js
+        - ProjectStyle.css
+    - Project2/
+        - Project2.html
+        - Project2app.js
+        - Project2Style.css
+    - Project3/
+        - Project3.html
+        - Project3app.js
+        - Project3Style.css
+    - Project4/
+        - Project4.html
+        - Project4app.js
+        - Project4Style.css
+    - README.md
+    - index.html
